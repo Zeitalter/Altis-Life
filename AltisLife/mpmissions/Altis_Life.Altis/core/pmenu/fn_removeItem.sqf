@@ -19,6 +19,6 @@ if(player != vehicle player) exitWith {titleText["You cannot remove an item when
 if(!([false,_data,(parseNumber _value)] call life_fnc_handleInv)) exitWith {hint "Couldn't remove that much of that item, maybe you don't have that amount?"};
 _type = [_data,0] call life_fnc_varHandle;
 _type = [_type] call life_fnc_varToStr;
-hint format["You have successfully removed %1 %2 from your inventory.",(parseNumber _value), _type];
+hint format["Du hast erfolgreich %1 %2 entfernt!",(parseNumber _value), _type];
 	
 [] call life_fnc_p_updateMenu;

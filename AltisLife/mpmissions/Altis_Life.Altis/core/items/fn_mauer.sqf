@@ -11,7 +11,7 @@ _mauer attachTo[player,[0,5.5,0.2]];
 _mauer setDir 90;
 _mauer setVariable["item","mauerDeployed",true];
 
-life_action_mauerDeploy = player addAction["<t color='#00FF00'>Mauer aufstellen</t>",{if(!isNull life_mauer) then {detach life_mauer; life_mauer = ObjNull;}; player removeAction life_action_mauerDeploy; life_action_mauerDeploy = nil;},"",999,false,false,"",'!isNull life_mauer'];
+life_action_mauerDeploy = player addAction["<t color='#00FF00'>Absperrung aufstellen</t>",{if(!isNull life_mauer) then {detach life_mauer; life_mauer = ObjNull;}; player removeAction life_action_mauerDeploy; life_action_mauerDeploy = nil;},"",999,false,false,"",'!isNull life_mauer'];
 life_mauer = _mauer;
 waitUntil {isNull life_mauer};
 if(!isNil "life_action_mauerDeploy") then {player removeAction life_action_mauerDeploy;};

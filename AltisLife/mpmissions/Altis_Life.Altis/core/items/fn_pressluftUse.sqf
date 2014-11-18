@@ -14,19 +14,19 @@ closeDialog 0;
 private["_mine","_itemWeight","_diff","_itemName","_val"];
 switch (true) do
 {
-    case (player distance (getMarkerPos "lead_1") < 30): {_mine = "copperore"; _val = 3;};       //den Wert ‰ndern f¸r die Abbauanzahl
-    case (player distance (getMarkerPos "iron_1") < 30): {_mine = "ironore"; _val = 3;};           //den Wert ‰ndern f¸r die Abbauanzahl
-    case (player distance (getMarkerPos "salt_1") < 120) : {_mine = "salt"; _val = 5;};              //den Wert ‰ndern f¸r die Abbauanzahl
-    case (player distance (getMarkerPos "sand_1") < 75) : {_mine = "sand"; _val = 6;};             //den Wert ‰ndern f¸r die Abbauanzahl
-    case (player distance (getMarkerPos "diamond_1") < 50): {_mine = "diamond"; _val = 2;};  //den Wert ‰ndern f¸r die Abbauanzahl
-    case (player distance (getMarkerPos "oil_2") < 40) : {_mine = "oilu"; _val = 2;};                 //den Wert ‰ndern f¸r die Abbauanzahl
-    case (player distance (getMarkerPos "rock_1") < 50): {_mine = "rock"; _val = 3;};              //den Wert ‰ndern f¸r die Abbauanzahl
+    case (player distance (getMarkerPos "lead_1") < 30): {_mine = "copperore"; _val = 3;};       //den Wert √§ndern f√ºr die Abbauanzahl
+    case (player distance (getMarkerPos "iron_1") < 30): {_mine = "ironore"; _val = 3;};           //den Wert √§ndern f√ºr die Abbauanzahl
+    case (player distance (getMarkerPos "salt_1") < 120) : {_mine = "salt"; _val = 5;};              //den Wert √§ndern f√ºr die Abbauanzahl
+    case (player distance (getMarkerPos "sand_1") < 75) : {_mine = "sand"; _val = 6;};             //den Wert √§ndern f√ºr die Abbauanzahl
+    case (player distance (getMarkerPos "diamond_1") < 50): {_mine = "diamond"; _val = 2;};  //den Wert √§ndern f√ºr die Abbauanzahl
+    case (player distance (getMarkerPos "oil_2") < 40) : {_mine = "oilu"; _val = 2;};                 //den Wert √§ndern f√ºr die Abbauanzahl
+    case (player distance (getMarkerPos "rock_1") < 50): {_mine = "rock"; _val = 3;};              //den Wert √§ndern f√ºr die Abbauanzahl
     default {_mine = "";};
 };
 //Mine check
-if(_mine == "") exitWith {hint "Du bist nicht in der N‰he einer Sch¸rfstelle!";};
-if(!license_civ_ingi) exitWith {hint "Du kannst den Presslufthammer nicht benutzen. Du bist kein Dimplomingenieur, mach zuerst deine Ausbildung!";};
-if(life_inv_pickaxe > 0) exitWith {hint "Du darfst nur mit einem Abbauger‰t arbeiten!";};
+if(_mine == "") exitWith {hint "Du bist nicht in der N√§he einer Sch√ºrfstelle!";};
+if(!license_civ_ingi) exitWith {hint "Du kannst den Presslufthammer nicht benutzen. Du bist kein Ingenieur, mach zuerst deine Ausbildung!";};
+if(life_inv_pickaxe > 0) exitWith {hint "Du darfst nur mit einem Abbauger√§t arbeiten!";};
 _diff = [_mine,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_diff == 0) exitWith {hint "Dein Inventar ist voll."};
 delay_pickaxe = true;

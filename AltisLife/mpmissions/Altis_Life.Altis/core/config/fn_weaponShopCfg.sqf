@@ -24,7 +24,7 @@ switch(_shop) do
 		{
 			switch (true) do 
 			{
-				case (playerSide != independent): {"Du bist leider kein Sanitäter"};
+				case (playerSide != independent): {"Du bist leider kein Sanitäter!"};
 				default {
 					["Sanitäter Shop",
 						[
@@ -46,7 +46,7 @@ switch(_shop) do
         switch(true) do
         {
             case (playerSide != civilian): {"Du bist leider kein ADAC!"};
-			case (!license_civ_adac): {"Sie sind nicht beim ADAC regestriert"};
+			case (!license_civ_adac): {"Sie sind nicht beim ADAC registriert!"};
             default
             {
                 ["Altis ADAC-Shop",

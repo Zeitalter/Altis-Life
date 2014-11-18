@@ -158,9 +158,9 @@ class playerSettings {
 			idc = 2023;
 
 			x = 0.475;
-			y = 0.24;
+			y = 0.54;
 			w = 0.2;
-			h = 0.36;
+			h = 0.04;
 			colorBackground[] = {0,0,0,0.5};
 		};
 		class Licenses_Menu : Life_RscControlsGroup 

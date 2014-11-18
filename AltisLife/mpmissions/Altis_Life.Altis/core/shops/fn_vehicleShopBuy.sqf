@@ -14,6 +14,9 @@ _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg; _basePrice
  if(_mode) then {_basePrice = round(_basePrice * 1.5)};
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
+//Array of vehicles with thermals (fix for heilcopters DLC)
+_thermalvehs = ["B_Heli_Light_01_F","C_Offroad_01_F","B_Boat_Armed_01_minigun_F"];
+
 //Series of checks (YAY!)
 if(_basePrice < 0) exitWith {}; //Bad price entry
 if(life_cash < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough",[_basePrice - life_cash] call life_fnc_numberText];};
@@ -51,7 +54,7 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	[_vehicle] call life_fnc_clearVehicleAmmo;
 	[[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 	[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
-	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+	if (! _vehicle in _thermalvehs) then {_vehicle disableTIEquipment true}; //No Thermals.. They're cheap but addictive.
 } else {
 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
@@ -64,7 +67,7 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	[_vehicle] call life_fnc_clearVehicleAmmo;
 	[[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 	[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
-	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+	if (! _vehicle in _thermalvehs) then {_vehicle disableTIEquipment true}; //No Thermals.. They're cheap but addictive.
 };
 
 //Side Specific actions.

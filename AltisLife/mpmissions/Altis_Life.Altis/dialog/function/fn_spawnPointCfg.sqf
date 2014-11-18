@@ -68,7 +68,7 @@ switch (_side) do
 			["adac_spawn_1","adac Kavalla","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		};		
-	      if ((getPlayerUID player) in ["76561198032282495","76561198133948678"]) then
+	      if ((getPlayerUID player) in ["76561198021133757","76561198066668587","76561198069582880","76561198032282495","76561198030143176","76561198123448454","76561198092029172","76561198127040844","76561198134758744","76561198103196098","76561198091090582"]) then
 		{
 			_return = _return + [
 			["civ_kbb_spawn","KBB-Hauptquartier","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]

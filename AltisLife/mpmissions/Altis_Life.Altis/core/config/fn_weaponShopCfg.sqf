@@ -211,7 +211,7 @@ switch(_shop) do
 		};
 	};
 
-	case "Hauptkommissar":
+	case "cop_hkommissar":
 	{
 		switch(true) do
 		{

@@ -80,7 +80,7 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["textures\fahrzeug\adac\suv_adac3.paa","cop"],
+			["textures\fahrzeug\adac\suv_adac3.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],

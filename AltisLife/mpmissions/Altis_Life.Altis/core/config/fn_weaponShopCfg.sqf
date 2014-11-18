@@ -269,8 +269,7 @@ switch(_shop) do
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
-						["NVGoggles",nil,2000],
-						["Rangefinder",nil,2000]
+						["NVGoggles",nil,2000]
 					]
 				];
 			};

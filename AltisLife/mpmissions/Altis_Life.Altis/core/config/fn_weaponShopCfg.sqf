@@ -57,7 +57,7 @@ switch(_shop) do
                         ["ItemWatch",nil,10],
                         ["ToolKit",nil,50],
                         ["FirstAidKit",nil,50],
-                        ["NVGoggles",nil,1000],
+                        ["NVGoggles",nil,900],
                         //["hgun_Pistol_heavy_01_MRD_F",nil,10000],
                         //["11Rnd_45ACP_Mag",nil,100],
                         ["Rangefinder",nil,1000]

@@ -8,15 +8,15 @@ private["_unit"];
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _unit) exitWith {};
 if(!(_unit isKindOf "AllVehicles")) exitWith {hint "Du kannst den GPS Tracker hier nicht benutzen."};
-if(player distance _unit > 7) exitWith {hint "Du musst dich näher an das Fahrzeug stellen!"};
+if(player distance _unit > 7) exitWith {hint "Du musst dich nÃ¤her ranstellen!"};
 if(!([false,"gpstracker",1] call life_fnc_handleInv)) exitWith {};
 closeDialog 0;
 life_action_inUse = true;
 player playMove "AinvPknlMstpSnonWnonDnon_medic_1";
 sleep 4;
 life_action_inUse = false;
-if(player distance _unit > 7) exitWith {titleText["Du bist nicht in der Nähe eines Fahrzeugs!","PLAIN"];};
-titleText["Du hast einen GPS Tracker an diesem Fahrzeug angebracht.","PLAIN"];
+if(player distance _unit > 7) exitWith {titleText["Du kannst den GPS Tracker hier nicht benutzen.","PLAIN"];};
+titleText["Du hast einen GPS Tracker angebracht.","PLAIN"];
 [_unit] spawn {
     _veh = _this select 0;
     _markerName = format["%1_gpstracker",_veh];

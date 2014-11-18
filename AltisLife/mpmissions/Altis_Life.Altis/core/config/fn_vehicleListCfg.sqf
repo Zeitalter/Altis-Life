@@ -84,7 +84,7 @@ case "civ_car":
 			["C_Offroad_01_F",30000],
 			["C_SUV_01_F",45000],
 			["C_Van_01_transport_F",75000],
-			["C_Hatchback_01_sport_F",50000] 
+			["C_Hatchback_01_sport_F",100000] 
 		];
 	};
 	
@@ -111,22 +111,22 @@ case "reb_car":
 		[
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",25000],
-			["I_MRAP_03_F",1650000],
-			["O_MRAP_02_F",1450000],
-			["B_MRAP_01_F",800000],
+			["I_MRAP_03_F",3700000],
+			["O_MRAP_02_F",3160000],
+			["B_MRAP_01_F",2330000],
 			["B_Truck_01_mover_F",600000],
 			["O_Truck_03_transport_F",750000],
-			["B_G_Offroad_01_armed_F",1400000],
-			["B_Heli_Light_01_F",600000],
-			["O_Heli_Light_02_unarmed_F",750000]
+			["B_G_Offroad_01_armed_F",3400000],
+			["B_Heli_Light_01_F",1000000],
+			["O_Heli_Light_02_unarmed_F",2330000]
 		];
 		
 		if(license_civ_rebel) then
 		{
 			_return set[count _return,
-			["B_Heli_Transport_01_F",3500000]];
+			["B_Heli_Transport_01_F",5660000]];
 			_return set[count _return,
-			["O_Heli_Light_02_F",23000000]];
+			["O_Heli_Light_02_F",40000000]];
 		};
 	};
 	
@@ -194,9 +194,9 @@ case "civ_air":
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",750000],
-			["O_Heli_Light_02_unarmed_F",1200000],
-			["I_Heli_Transport_02_F",2300000]
+			["B_Heli_Light_01_F",1330000],
+			["O_Heli_Light_02_unarmed_F",3000000],
+			["I_Heli_Transport_02_F",4660000]
 		];
 	};
 case "cop_air":

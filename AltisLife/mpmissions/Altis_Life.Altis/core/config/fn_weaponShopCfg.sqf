@@ -211,7 +211,7 @@ switch(_shop) do
 		};
 	};
 
-	case "Hauptkommissar":
+	case "cop_hkommissar":
 	{
 		switch(true) do
 		{
@@ -378,6 +378,8 @@ switch(_shop) do
 						["10Rnd_762x51_Mag",nil,500],
 						["LMG_Zafir_F",nil,1500000],
 						["150Rnd_762x51_Box_Tracer",nil,7000],
+						["LMG_Mk200_F",nil,750000],
+						["200Rnd_65x39_cased_Box",nil,4000],
 						["srifle_GM6_camo_F",nil,2000000],
 						["5Rnd_127x108_Mag",nil,5000],
 						["5Rnd_127x108_APDS_Mag",nil,15000],
@@ -423,6 +425,8 @@ switch(_shop) do
 			{
 				["Billy Joe's Firearms",
 					[
+						["arifle_sdar_F",nil,20000],
+						["20Rnd_556x45_UW_mag",nil,125],
 						["hgun_Rook40_F",nil,6500],
 						["hgun_Pistol_heavy_02_F",nil,9850],
 						["hgun_ACPC2_F",nil,11500],

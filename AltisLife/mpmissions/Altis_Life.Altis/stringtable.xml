@@ -215,12 +215,12 @@
 		<Key ID="STR_CELL_TextPolice">
 			<Original>Text Police</Original>
 			<English>Text Police</English>
-			<German>An die Polizei</German>
+			<German>An Polizei</German>
 		</Key>
 		<Key ID="STR_CELL_TextAdmins">
 			<Original>Text Admins</Original>
 			<English>Text Admins</English>
-			<German>An die Admins</German>
+			<German>An Admins</German>
 		</Key>
 		<Key ID="STR_CELL_AdminMsg">
 			<Original>Admin Message</Original>
@@ -235,7 +235,7 @@
 		<Key ID="STR_CELL_EMSRequest">
 			<Original>Request EMS</Original>
 			<English>Request EMS</English>
-			<German>An die Sanitäter</German>
+			<German>An Sanitäter</German>
 		</Key>
 	</Package>
 	<Package name="Chop_Shop">

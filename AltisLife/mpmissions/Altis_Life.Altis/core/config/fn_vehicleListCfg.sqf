@@ -202,7 +202,7 @@ case "civ_air":
 			["B_Heli_Light_01_F",1330000],
 			["O_Heli_Light_02_unarmed_F",3000000],
 			["I_Heli_Transport_02_F",4660000],
-			["B_Heli_Transport_03_unarmed_F",13000000]
+			["B_Heli_Transport_03_unarmed_F",8600000]
 >>>>>>> origin/master
 		];
 	};

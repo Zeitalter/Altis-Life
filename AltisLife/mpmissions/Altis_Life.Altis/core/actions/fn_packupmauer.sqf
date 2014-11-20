@@ -12,7 +12,7 @@ if(isNil "_mauer") exitWith {};
 
 if(([true,"mauer",1] call life_fnc_handleInv)) then
 {
-    titleText["Du hast die Mauer aufgehoben.","PLAIN"];
+    titleText["Du hast die Absperrung aufgehoben.","PLAIN"];
     if(!isNil "life_action_mauerDeploy") then {player removeAction life_action_mauerDeploy;};
     life_action_mauerPickup = nil;
     deleteVehicle _mauer;

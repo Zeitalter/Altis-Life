@@ -35,7 +35,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "adac";};
+			case 0: {_color = "ADAC";};
 		};
 	};
 	
@@ -79,7 +79,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "adac";};
+			case 0: {_color = "ADAC";};
 			case 1: {_color = "DunkelRot";};
 			case 2: {_color = "Schwarz";};
 			case 3: {_color = "Silber";};
@@ -101,7 +101,7 @@ switch (_vehicle) do
 		
       switch (_index) do
 	   {
-			case 0: {_color = "adac"};
+			case 0: {_color = "ADAC"};
 	   };
 	};
 }; */ 			
@@ -142,7 +142,7 @@ switch (_vehicle) do
 			case 2: {_color = "Blau"};
 			case 3: {_color = "Rot"};
 			case 4: {_color = "Weiss"};
-			case 5: {_color = "Grün"};
+			case 5: {_color = "GrÃ¼n"};
 			case 6: {_color = "Camo"};
 			case 7: {_color = "Digi Desert"};
 			case 8: {_color = "Rebell"};
@@ -168,7 +168,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "adac"};
+			case 0: {_color = "ADAC"};
 			case 1: {_color = "Winter"};
 			case 2: {_color = "Ambulanz"};
 			case 3: {_color = "Polizei"};
@@ -233,8 +233,8 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "adac"};
-			case 1: {_color = "rost"};
+			case 0: {_color = "ADAC"};
+			case 1: {_color = "Rostig"};
 		};
 	};
 	
@@ -265,7 +265,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "adac"};
+			case 0: {_color = "ADAC"};
 			case 1: {_color = "Schwarz"};
 			case 2: {_color = "Weiss / Blau"};
 			case 3: {_color = "Digital Wueste"};
@@ -285,7 +285,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Ion"};
+			case 0: {_color = "Ion Security"};
 			case 1: {_color = "Dahoman"};
 		};
 	};
@@ -295,7 +295,7 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "SEK"};
-			case 1: {_color = "camo"};
+			case 1: {_color = "Camouflage"};
 		};
 	};
 	

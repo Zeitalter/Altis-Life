@@ -25,7 +25,7 @@ lbClear _list2;
 //lbSetData [_list2, _index, "pfad/zum/bild.paa"];
 //lbSetValue  [_list2, _index, "pfad/zum/bild.paa"];
 
-_text = "Angriff/Belagerung von Hauptstädten $150000";
+_text = "Angriff/Belagerung von HauptstÃ¤dten $150000";
 _data = "1";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -35,7 +35,7 @@ _data = "2";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Ausbruch aus dem Gefaengnis $150000";
+_text = "Ausbruch aus dem GefÃ¤ngnis $150000";
 _data = "3";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -55,7 +55,7 @@ _data = "6";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Belästigung eines Polizisten $50000";
+_text = "BelÃ¤stigung eines Polizisten $50000";
 _data = "7";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -75,12 +75,12 @@ _data = "10";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Dauerhaft störendes Hupen $5000";
+_text = "Dauerhaft stÃ¶rendes Hupen $5000";
 _data = "11";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Diebstahl/Führen e.fremden Zivilfahrzeugs $10000";
+_text = "Diebstahl/FÃ¼hren e.fremden Zivilfahrzeugs $10000";
 _data = "12";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -95,12 +95,12 @@ _data = "14";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Erregung öffentlichen Ärgernisses $100000";
+_text = "Erregung Ã¶ffentlichen Ã„rgernisses $100000";
 _data = "15";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Fahren ohne Führerschein $3000";
+_text = "Fahren ohne FÃ¼hrerschein $3000";
 _data = "16";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -120,12 +120,12 @@ _data = "19";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Fliegen/Schweben unterhalb 150m über Stadtgebiet $2000";
+_text = "Fliegen/Schweben unterhalb 150m Ã¼ber Stadtgebiet $2000";
 _data = "20";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Gefährliche Fahrweise $25000";
+_text = "GefÃ¤hrliche Fahrweise $25000";
 _data = "21";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -135,7 +135,7 @@ _data = "22";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Handel mit exotischen Gütern $25000";
+_text = "Handel mit exotischen GÃ¼tern $25000";
 _data = "23";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -165,12 +165,12 @@ _data = "28";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Schusswaffengebrauch innerhalb Städte $10000";
+_text = "Schusswaffengebrauch innerhalb StÃ¤dte $10000";
 _data = "29";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Töten eines Polizisten $100000";
+_text = "TÃ¶ten eines Polizisten $100000";
 _data = "30";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -180,17 +180,17 @@ _data = "31";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Überfahren eines anderen Spielers $15000";
+_text = "Ãœberfahren eines anderen Spielers $15000";
 _data = "32";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Überfall auf Personen/Fahrzeuge $10000";
+_text = "Ãœberfall auf Personen/Fahrzeuge $10000";
 _data = "33";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Überhöhte Geschwindigkeit $7500";
+_text = "ÃœberhÃ¶hte Geschwindigkeit $7500";
 _data = "34";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -215,7 +215,7 @@ _data = "38";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Zerstörung von Polizeieigentum $50000";
+_text = "ZerstÃ¶rung von Polizeieigentum $50000";
 _data = "39";
 _list2 lbAdd format["%1  (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];

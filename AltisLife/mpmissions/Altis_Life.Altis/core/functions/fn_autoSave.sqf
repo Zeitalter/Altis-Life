@@ -15,7 +15,7 @@ while {true} do {    //Tells the function to continually loop.
 	if (alive player) then   //If the player is alive, then do this
         {
 		[false] call life_fnc_sessionUpdate;  //Same function used by the "Sync" button
-		hint "speichert..."   //Just to tell you that the game is saving
+		hint "Speichere..."   //Just to tell you that the game is saving
 	};
 }; 
 

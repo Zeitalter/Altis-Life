@@ -70,7 +70,7 @@ if((player getVariable["restrained",false])) exitWith {life_action_inUse = false
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_GNOTF_CaptureCancel","PLAIN"]; life_action_inUse = false;_hideout setVariable["inCapture",false,true]; _ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 life_action_inUse = false;
 
-titleText["Hideout has been captured.","PLAIN"];
+titleText["Versteck wurde eingenommen!","PLAIN"];
 _flagTexture = [
 		"\A3\Data_F\Flags\Flag_red_CO.paa",
 		"\A3\Data_F\Flags\Flag_green_CO.paa",

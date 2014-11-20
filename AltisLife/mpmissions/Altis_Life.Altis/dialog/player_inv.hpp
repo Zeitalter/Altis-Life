@@ -103,7 +103,7 @@ class playerSettings {
 			x = 0.7;
 			y = 0.24;
 			w = 0.2;
-			h = 0.4;
+			h = 0.35;
 			colorBackground[] = {0,0,0,0.5};
 		};
 		class moneyEdit: Life_RscEdit
@@ -123,7 +123,7 @@ class playerSettings {
 			idc = 2022;
 		
 			x = 0.475;
-			y = 0.2;
+			y = 0.54;
 			w = 0.2;
 			h = 0.04;
 			colorBackground[] = {0,0,0,0.8};
@@ -157,10 +157,10 @@ class playerSettings {
 		{
 			idc = 2023;
 
-			x = 0.475;
-			y = 0.24;
+			x = 0.7;
+			y = 0.6;
 			w = 0.2;
-			h = 0.36;
+			h = 0.04;
 			colorBackground[] = {0,0,0,0.5};
 		};
 		class Licenses_Menu : Life_RscControlsGroup 

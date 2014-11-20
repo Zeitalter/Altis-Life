@@ -158,7 +158,7 @@ class playerSettings {
 			idc = 2023;
 
 			x = 0.7;
-			y = 0.66;
+			y = 0.6;
 			w = 0.2;
 			h = 0.04;
 			colorBackground[] = {0,0,0,0.5};

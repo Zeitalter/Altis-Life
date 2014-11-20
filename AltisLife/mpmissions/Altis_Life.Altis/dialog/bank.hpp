@@ -102,6 +102,7 @@ class Life_atm_management {
 			y = 0.16;
 			w = 0.2125;
 			h = 0.6795;
+			sizeEx = GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.8};
 		};
 		

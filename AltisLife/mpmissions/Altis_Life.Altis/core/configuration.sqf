@@ -374,7 +374,8 @@ life_garage_prices =
 	["B_Truck_01_transport_F",2000],
 	["B_Truck_01_box_F", 35000],
 	["O_MRAP_02_F",45000],
-	["B_Heli_Light_01_F",15000],
+	["B_Heli_Light_01_F",15000], //C_Heli_Light_01_civil_F
+	["C_Heli_Light_01_civil_F",5000],
 	["O_Heli_Light_02_unarmed_F",65000],
 	["C_Rubberboat",400],
 	["C_Boat_Civil_01_F",4500],
@@ -422,6 +423,7 @@ life_garage_sell =
 	["B_Truck_01_box_F", 35000],
 	["O_MRAP_02_F",45000],
 	["B_Heli_Light_01_F",15000],
+	["C_Heli_Light_01_civil_F",5000],
 	["O_Heli_Light_02_unarmed_F",65000],
 	["C_Rubberboat",400],
 	["C_Boat_Civil_01_F",4500],

@@ -87,8 +87,8 @@ switch (_vehicle) do
 			case 5: {_color = "Ghostrider";};
 			case 6: {_color = "Monster Energy";};
 			case 7: {_color = "Gruenes Tribal";};
-			case 8: {_color = "Universum";};
-			case 9: {_color = "Deutschland Weltmeister";};
+			case 8: {_color = "Nyan";};
+			case 9: {_color = "B M W X6";};
 			case 10: {_color = "Ambulanz";};
 			case 11: {_color = "Polizei"};
 			case 12: {_color = "SEK"};
@@ -146,6 +146,7 @@ switch (_vehicle) do
 			case 6: {_color = "Camo"};
 			case 7: {_color = "Digi Desert"};
 			case 8: {_color = "Rebell"};
+			case 9: {_color = "Polizei"};
 		};
 	};
 	
@@ -170,7 +171,8 @@ switch (_vehicle) do
 			case 0: {_color = "adac"};
 			case 1: {_color = "Winter"};
 			case 2: {_color = "Ambulanz"};
-			case 3: {_color = "Polizei"};			
+			case 3: {_color = "Polizei"};
+			case 4: {_color = "Rebellen Tarnfleck"};			
 		};
 	};
 	
@@ -196,6 +198,7 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Winter"};
 			case 1: {_color = "SEK"};
+			case 2: {_color = "Wüste"};
 		};
 	};
 	

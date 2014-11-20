@@ -85,11 +85,11 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
-			["textures\fahrzeug\zivilisten\suv\ghostrider.paa","civ"],
+			["textures\fahrzeug\zivilisten\suv\fire_suv.paa","civ"],
 			["textures\fahrzeug\zivilisten\suv\monster.paa","civ"],
 			["textures\fahrzeug\zivilisten\suv\tribal.paa","civ"],
-			["textures\fahrzeug\zivilisten\suv\universe.paa","civ"],
-			["textures\fahrzeug\zivilisten\suv\weltmeister.paa","civ"],
+			["textures\fahrzeug\zivilisten\suv\nyan_suv.paa","civ"],
+			["textures\fahrzeug\zivilisten\suv\X6_suv.paa","civ"],
 			["textures\fahrzeug\notarzt\suv.paa","med"],
 			["textures\fahrzeug\polizei\suv.paa","cop"],
 			["textures\fahrzeug\sek\suv.paa","sek"]
@@ -151,7 +151,8 @@ switch (_vehicle) do
 			["\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_indp_co.paa","civ"],
 			["\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa","civ"],
 			["\A3\Soft_F\Quadbike_01\Data\quadbike_01_opfor_co.paa","reb"],
-			["\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa","reb"]
+			["\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa","reb"],
+			["textures\fahrzeug\polizei\quadbike_Polizei.paa","cop"]
 		];
 	};
 	
@@ -178,7 +179,8 @@ switch (_vehicle) do
 			["textures\fahrzeug\notarzt\ifrit_front.paa","med","textures\fahrzeug\notarzt\ifrit_hinten.paa"],
 			["textures\fahrzeug\polizei\ifrit_front.paa","cop","textures\fahrzeug\polizei\ifrit_hinten.paa"],
 			["textures\fahrzeug\adac\Ifrit_adac2_Front.paa","civ","textures\fahrzeug\adac\Ifrit_adac2_hinten.paa"],
-			["textures\fahrzeug\adac\Ifrit_adac2_Front.paa","cop","textures\fahrzeug\adac\Ifrit_adac2_hinten.paa"]
+			["textures\fahrzeug\adac\Ifrit_adac2_Front.paa","cop","textures\fahrzeug\adac\Ifrit_adac2_hinten.paa"],
+			["textures\fahrzeug\rebellen\ifrit\mbt_02_ext01_co.paa","reb","textures\fahrzeug\rebellen\ifrit\mbt_02_ext02_co.paa"]
 		];
 		if(license_civ_adac) then 
 		{ 
@@ -217,7 +219,8 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["textures\fahrzeug\rebellen\strider\camo.paa","reb"],
-			["textures\fahrzeug\sek\strider.paa","sek"]
+			["textures\fahrzeug\sek\strider.paa","sek"],
+			["textures\fahrzeug\rebellen\strider\striderw.paa","reb"]
 		];
 	};
 	

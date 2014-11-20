@@ -36,6 +36,16 @@ switch (__GETC__(life_medlevel)) do
         		waitUntil {uniform player != "U_Rangemaster"};
     		};
 	};
+	
+	[] spawn
+	{
+	    	while {true} do
+    		{
+        		waitUntil {uniform player == "U_C_WorkerCoveralls"};
+        		player setObjectTextureGlobal [0,"textures\uniform\medic\med.paa"]; //Rekrut
+        		waitUntil {uniform player != "U_C_WorkerCoveralls"};
+    		};
+	};
 
 /*
 if((__GETC__(life_medicLevel)) < 2)

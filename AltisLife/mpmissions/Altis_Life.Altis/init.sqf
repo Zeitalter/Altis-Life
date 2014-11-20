@@ -46,10 +46,12 @@ if (!(isClass (configFile >> "CfgPatches" >> "btk_wirecutter"))) then {
 [] execVM "scripts\Intel\Intel_init.sqf"; //buidl wechsl
 [] execVM "scripts\unfall.sqf"; // du fliagst ausm auto
 [] execVM "scripts\restart.sqf"; // du fliagst ausm auto
-[] execVM "scripts\nosidechat.sqf"; // du fliagst ausm auto
+[] execVM "scripts\nosidechat.sqf"; // du fliagst ausm auto Turbo
+[] execVM "scripts\Turbo.sqf"; //voigaaahs geeehm heheh oida abgeh mit da sportlimo
 //[] execVM "scripts\adac\schluessel.sqf"; // adac kommt noch
 player execVM "scripts\unflip\init_umdrehen.sqf"; //autos umdrahn
 null = execVM "scripts\killTicker.sqf"; //sogt wea wen umbrocht hod
+null =[] execVM "scripts\heliCrash\crashInit.sqf"; //voigas in bon eine
 _igiload = execVM "scripts\IgiLoad\IgiLoadInit.sqf"; //Cargoscript
 [] spawn life_fnc_autoSave; // autosave
 //logistic

@@ -22,7 +22,7 @@ case "kart_shop":
 		];
 	};
 
-case "med_shop":
+case "med_shop": 
 	{
 			_return set[count _return,
 			["C_Offroad_01_F",5000]];
@@ -31,6 +31,8 @@ case "med_shop":
 		{
 			_return set[count _return,
 			["C_SUV_01_F",30000]];
+			_return set[count _return,
+			["C_Van_01_box_F",38000]];
 		};
 	if(__GETC__(life_mediclevel) > 2) then
 		{
@@ -194,15 +196,12 @@ case "civ_air":
 	{
 		_return =
 		[
-<<<<<<< HEAD
 			["C_Heli_Light_01_civil_F",750000],
 			["O_Heli_Light_02_unarmed_F",1200000],
 			["I_Heli_Transport_02_F",2300000]
-=======
 			["B_Heli_Light_01_F",1330000],
 			["O_Heli_Light_02_unarmed_F",3000000],
 			["I_Heli_Transport_02_F",4660000]
->>>>>>> origin/master
 		];
 	};
 case "cop_air":

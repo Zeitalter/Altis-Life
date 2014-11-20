@@ -120,6 +120,42 @@ class CfgSounds
 		sound[] = {"\sounds\blinkerstart.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	class enginebang
+	{
+		name = "enginebang";
+		sound[] = {sounds\enginebang.ogg, 1, 1.0};
+		titles[] = {0, ""};
+	};
+	class ring
+	{
+		name = "ring";
+		sound[] = {sounds\ring.ogg, 1.6, 1.0};
+		titles[] = {0, ""};
+	};
+	class engineFailure
+	{
+		name = "engineFailure"; 
+		sound[] = {sounds\engineFailure.ogg, 1.6, 1.0};
+		titles[] = {0, ""};
+	};
+	class warning
+	{
+		name = "warning"; 
+		sound[] = {sounds\warning.ogg, 0.5, 1.0};
+		titles[] = {0, ""};
+	};
+	class warning2
+	{
+		name = "warning2"; 
+		sound[] = {sounds\warning2.ogg, 0.5, 1.0};
+		titles[] = {0, ""};
+	};
+	class pullUp
+	{
+		name = "pullUp"; 
+		sound[] = {sounds\pullUp.ogg, 0.8, 1.0};
+		titles[] = {0, ""};
+	};
 	class dog_whine
 	{
 		name = "dog_whine";

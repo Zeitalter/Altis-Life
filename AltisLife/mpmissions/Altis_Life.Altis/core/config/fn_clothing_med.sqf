@@ -17,15 +17,15 @@ ctrlSetText[3103,"Notarzt Ausruestung"];
 _ret = [];
 switch (_filter) do
 {
-	//Uniforms
+	//Uniforms///////////////////////////////////////////////////////////////
 	case 0:
 	{
-		_ret = 
-		[
-		["U_Rangemaster","Notarzt Uniform",25]
-		];
+		_ret pushBack ["U_Rangemaster","Notarzt Anwaerter",25]; // da anzug fia de, de no grea hinta de ohrn san
+		if(__GETC__(life_medlevel) > 1) then
+		{
+			_ret pushBack ["U_C_WorkerCoveralls","Notarzt",350]; //do groﬂﬂe sanni
+		};
 	};
-	
 	//Hats
 	case 1:
 	{

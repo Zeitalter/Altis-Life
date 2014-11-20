@@ -19,7 +19,7 @@ if(life_is_arrested) then
 	else
 {
 	[] call life_fnc_spawnMenu;
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////// U_I_CombatUniform
 [] spawn
 {
     while {true} do
@@ -27,6 +27,24 @@ if(life_is_arrested) then
         waitUntil {uniform player == "U_Rangemaster"};
         player setObjectTextureGlobal [0,"textures\uniform\adac\recruit_uniform_adac.paa"]; //Rekrut
         waitUntil {uniform player != "U_Rangemaster"};
+    };
+};
+[] spawn
+{
+    while {true} do
+    {
+        waitUntil {uniform player == "U_I_CombatUniform"};
+        player setObjectTextureGlobal [0,"textures\uniform\reb\Gorka_camo_04.paa"]; //gschmarre do GorkaTarnanzug
+        waitUntil {uniform player != "U_I_CombatUniform"};
+    };
+};
+[] spawn
+{
+    while {true} do
+    {
+        waitUntil {uniform player == "U_B_CTRG_2"};
+        player setObjectTextureGlobal [0,"textures\uniform\reb\tarn.paa"]; //gschmarre do GorkaTarnanzug
+        waitUntil {uniform player != "U_B_CTRG_2"};
     };
 };
 ////////////////////////////////////////////////////////////////////

@@ -2830,7 +2830,7 @@
 		<Key ID="STR_vInAct_GetInKart">
 			<Original>Get In Kart</Original>
 			<English>Get In Kart</English>
-			<German>Ins Kart setzen</German>
+			<German>Einsteigen</German>
 		</Key>
 		<Key ID="STR_vInAct_PushBoat">
 			<Original>Push Boat</Original>

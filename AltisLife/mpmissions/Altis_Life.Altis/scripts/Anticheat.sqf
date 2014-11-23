@@ -14,7 +14,7 @@ _Admins = ["76561198035863318","76561198066223827","76561198125588464","76561198
 _Use_Life_fnc_MP = false;					//If you are using altis life change this to true
 
 //Add new cheat files & variables & menus to these lists
-_DetectedFiles = ["hack.sqf","g-e-f.sqf","init.sqf","gef.sqf","JM3.sqf","pa.pbo","JM3.png","wookie.sqf","wookie_wuat\start.sqf","lystoarma3\start.sqf","help.sqf","hack.sqf","cheat.sqf","JxMxE.sqf","JME.sqf","wookiev5.sqf","menu.sqf"];			
+_DetectedFiles = ["hack.sqf","gef.png","g-e-f.sqf","init.sqf","gef.sqf","JM3.sqf","pa.pbo","JM3.png","wookie.sqf","wookie_wuat\start.sqf","lystoarma3\start.sqf","help.sqf","hack.sqf","cheat.sqf","JxMxE.sqf","JME.sqf","wookiev5.sqf","menu.sqf"];			
 _DetectedVariables = ["Team GEF","Team G-E-F","G-E-F","gef","personalarsenal","spawn","PA_arsenal","pa","ESP","Wookie","Extasy","GOD","GodMode","JxMxE_Exec","Lystic","Hack","Script","Wookie_Exec","Bypass"];
 _DetectedMenus = [3030];
 /* End Configuration */

@@ -173,7 +173,7 @@ switch (_code) do
 		};
 	};
 	
-	case 50: //Hände zum Himmel !!! shift + M 
+	case 50: //HÃ¤nde zum Himmel !!! shift + M 
 	{
         	if(_shift) then {_handled = true;};
 
@@ -225,7 +225,7 @@ switch (_code) do
 			};
 		};
 	};
-     ///EMP menü mit K afruafa
+     ///EMP menÃ¼ mit K afruafa
 	case 37:
     {
         if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player && (typeOf vehicle player) in ["B_Heli_Light_01_F","I_Heli_light_03_unarmed_F"])) then
@@ -276,6 +276,13 @@ switch (_code) do
     [] execVM "scripts\AdminTool\atools\prio1\loop.sqf"; //ADMIN TOOL
     };
 	
+	case 25: //P knopf zum schlÃ¼essel geben
+     {
+     if(playerSide in [west,independent]) then {
+     	life_vehicles set[count life_vehicles,cursorTarget];
+     };
+     };
+
 	//U Key do hon i an fahrzeigsound drin und d'kutschndian ja und zum zuaspian is hoid a no guad wa buidl dabei san
 	case 22:
 	{

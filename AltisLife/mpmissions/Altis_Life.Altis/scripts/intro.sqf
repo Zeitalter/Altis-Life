@@ -11,24 +11,20 @@ _onScreenTime = 8;
 
 sleep 15; //Wait in seconds before the credits start after player is in-game
  
-_role1 = "Wir prÃ¤sentieren stolz:";
+_role1 = "Wir präsentieren stolz:";
 _role1names = ["Das Zeitalter"];
 _role2 = "Entwickler:";
-_role2names = ["Pitbull","Timeout","Lyca Knight","Ripper","Hightmiky","da'sp||3r"];
+_role2names = ["Pitbull","Timeout","Lyca Knight","Ripper","Hightmiky","da'sp||3r","Heisenberg"];
 _role3 = "Website:";
 _role3names = ["www.das-zeitalter.de"];
 _role4 = "Teamspeak:";
 _role4names = ["ts3.das-uhrwerk.net"];
-_role5 = "Neues:";
-_role5names = ["Server Version 0.0.3 Alpha","Neue Skins","AntiCheat verbessert","Helikopter DLC","vieles mehr"];
-_role6 = "Bekannte Bugs";
-_role6names = ["Weitere Bugs bitte im Forum melden!"];
 {
 sleep 2;
 _memberFunction = _x select 0;
 _memberNames = _x select 1;
 _finalText = format ["<t size='0.55' color='#000000' align='right'>%1<br /></t>", _memberFunction];
-_finalText = _finalText + "<t size='0.70' color='#FFFFFF' align='right'>";
+_finalText = _finalText + "<t size='0.70' color='#0099FF' align='right'>";
 {_finalText = _finalText + format ["%1<br />", _x]} forEach _memberNames;
 _finalText = _finalText + "</t>";
 _onScreenTime + (((count _memberNames) - 1) * 0.9);
@@ -45,7 +41,5 @@ sleep (_onScreenTime);
 [_role1, _role1names],
 [_role2, _role2names],
 [_role3, _role3names],
-[_role4, _role4names],
-[_role5, _role5names],
-[_role6, _role6names]
+[_role4, _role4names]
 ];

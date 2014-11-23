@@ -16,7 +16,7 @@ class Life_atm_management {
 			w = 1;
 			h = 0.76;
 		};
-		
+		/*
 		class Life_RscTitleBackground:Life_RscText 
 		{
 			idc = -1;
@@ -27,6 +27,7 @@ class Life_atm_management {
 			h = 0.04;
 			colorBackground[] = {0,0,0,0.8};
 		};
+		*/
 	};
 	
 	class controls {
@@ -47,12 +48,12 @@ class Life_atm_management {
 			idc = -1;
 			text = "$STR_ATM_Title";
 			
-			x = 0.55;
+			x = 0.5625;
 			y = 0.16;
 			w = 0.275;
 			h = 0.04;
 			colorText[] = {0.95,0.95,0.95,1};
-			colorBackground[] = {-1,-1,-1,0};
+			colorBackground[] = {0,0,0,0.8};
 		};
 		
 		class WithdrawButton : life_RscButtonMenu 
@@ -86,11 +87,10 @@ class Life_atm_management {
 		{
 			idc = 2702;
 			text = "1";
-			sizeEx = GUI_GRID_H;
 			x = 0.5625; 
 			y = 0.44;
 			w = 0.275; 
-			h = 0.06;
+			h = 0.04;
 			colorBackground[] = {0,0,0,0.8};
 		};
 		
@@ -100,9 +100,9 @@ class Life_atm_management {
 			
 			x = 0.1375;
 			y = 0.16;
-			w = 0.2125;
+			w = 0.35;
 			h = 0.6795;
-			sizeEx = GUI_GRID_H;
+			sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 			colorBackground[] = {0,0,0,0.8};
 		};
 		
@@ -139,9 +139,9 @@ class Life_atm_management {
 			text = "$STR_Global_Close";
 			onButtonClick = "closeDialog 0;";
 			
-			x = 0.35;
+			x = 0.5625;
 			y = 0.8;
-			w = 0.4875;
+			w = 0.275;
 			h = 0.04;
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0,0,0,0.8};

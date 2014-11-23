@@ -188,7 +188,7 @@ class playerSettings {
 		class DropButton: Life_RscButtonMenu
 		{
 			idc = 2002;
-			onButtonClick = "[] call life_fnc_giveItem; closeDialog 0;";
+			onButtonClick = "[] call life_fnc_giveItem;";
 
 			text = "$STR_Global_Give"; //--- ToDo: Localize;
 			x = 0.7;
@@ -200,7 +200,7 @@ class playerSettings {
 		};
 		class UseButton: Life_RscButtonMenu
 		{
-			onButtonClick = "[] call life_fnc_useItem; closeDialog 0;";
+			onButtonClick = "[] call life_fnc_useItem;";
 
 			idc = 1015;
 			text = "$STR_Global_Use"; //--- ToDo: Localize;
@@ -213,7 +213,7 @@ class playerSettings {
 		};
 		class RemoveButton: Life_RscButtonMenu
 		{
-			onButtonClick = "[] call life_fnc_removeItem; closeDialog 0;";
+			onButtonClick = "[] call life_fnc_removeItem;";
 
 			idc = 1016;
 			text = "$STR_Global_Remove"; //--- ToDo: Localize;

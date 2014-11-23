@@ -108,6 +108,25 @@ switch (_code) do
 		};
 	};
 	
+	case 36: //hend affe
+	{
+		if(_shift) then {_handled = true;};
+
+			if (_shift) then
+		{
+				if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
+			{
+				if (player getVariable ["handhoch", false]) then
+			{
+			player setVariable ["handhoch", false, true];
+	} else
+				{
+					[] spawn life_fnc_handhoch;
+				};
+			};
+		};
+	}; 
+	
 	//Knock out, this is experimental and yeah...
 	case 34:
 	{

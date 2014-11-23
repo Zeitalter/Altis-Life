@@ -2820,7 +2820,7 @@
 		<Key ID="STR_vInAct_Title">
 			<Original>Vehicle Interaction Menu</Original>
 			<English>Vehicle Interaction Menu</English>
-			<German>FahrzeuginteraktionsmenÃ¼</German>
+			<German>Fahrzeuginteraktionsmenü</German>
 		</Key>
 		<Key ID="STR_vInAct_Unflip">
 			<Original>Unflip Vehicle</Original>

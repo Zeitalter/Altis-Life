@@ -82,11 +82,12 @@ switch (_code) do
 				player selectWeapon life_curWep_h;
 			};
 		};
-		
-		player playMove "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon";
+		////////////////////////////////
 	
+		player playMove "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon"; 	
+	
+		player playMoveNow "AmovPercMstpSsurWnonDnon_AmovPercMstpSnonWnonDnon"; 		
 	};
-	
 	
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:

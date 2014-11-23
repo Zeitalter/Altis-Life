@@ -173,7 +173,7 @@ switch (_vehicle) do
 			case 1: {_color = "Winter"};
 			case 2: {_color = "Ambulanz"};
 			case 3: {_color = "Polizei"};
-			case 4: {_color = "Rebellen Tarnfleck"};			
+			case 7: {_color = "Rebellen Tarnfleck"};			
 		};
 	};
 	

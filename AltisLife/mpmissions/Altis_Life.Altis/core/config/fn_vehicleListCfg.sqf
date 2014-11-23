@@ -136,8 +136,10 @@ case "cop_car":
 	{
 		if(! license_cop_sek) then
 		{
-	       		_return set[count _return,
+	       		_return set[count _return, 
 				["C_Offroad_01_F",5000]];
+				_return set[count _return,
+				["B_Quadbike_01_F",2500];
 		
 			if(__GETC__(life_coplevel) > 1) then
 			{

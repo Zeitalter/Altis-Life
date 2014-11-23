@@ -81,18 +81,9 @@ switch (_code) do
 			if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
 				player selectWeapon life_curWep_h;
 			};
-		};
-		////////////////////////////////
-	
-		player playMove "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon"; 	
-		cutText ["Drücke V um Hände herunter zu nehmen","PLAIN",2]; 		
+		};		
 	};
-	
-	case 47:
-	{
-		player playMove "AmovPercMstpSsurWnonDnon_AmovPercMstpSnonWnonDnon"; 
-	};
-	
+		
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{

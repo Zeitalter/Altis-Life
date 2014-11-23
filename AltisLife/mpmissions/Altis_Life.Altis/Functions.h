@@ -110,6 +110,7 @@ class Life_Client_Core
 		class gather {};
 	      class Fitness {};
 	      class profiwerkzeug {};
+	      class surrender {};
 	};
 	
 	class Housing

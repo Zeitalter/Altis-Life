@@ -7,10 +7,7 @@ waitUntil { time > 0 };
 IL_EV_Count = 0;
 IL_Veh_Array = [];
 
-cutText ["lade...","PLAIN",2];
 sleep (random 30);
-
-cutText [Format ["Civ Nummer: %1", Player],"PLAIN",2];
 
 _null = [Player] execVM "scripts\IgiLoad\IgiLoad.sqf";
 waitUntil {scriptDone _null};
@@ -26,7 +23,7 @@ sleep (random (IL_Check_Veh_Max - IL_Check_Veh_Min));
 	};
 } forEach (vehicles);
 
-cutText ["Das Zeitalter wuenscht viel Spass :)","PLAIN",2];
+systemChat "Igiload Initialisiert";
 
 while {true} do 
 {

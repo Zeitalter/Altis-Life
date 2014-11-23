@@ -336,8 +336,8 @@ class playerSettings {
 			onButtonClick = "closeDialog 0; createDialog ""life_admin_menu"";";
 
 			text = "$STR_PM_AdminMenu"; //--- ToDo: Localize;
-			x = 0.275;
-			y = 0.99;
+			x = 0.0875;
+			y = 0.2;
 			w = 0.175;
 			h = 0.04;
 			colorText[] = {1,1,1,1};
@@ -351,6 +351,19 @@ class playerSettings {
 			text = "Speichern"; //--- ToDo: Localize;
 			x = 0.0875;
 			y = 0.54;
+			w = 0.175;
+			h = 0.04;
+			colorText[] = {1,1,1,1};
+			colorBackground[] = {0,0,0,0.8};
+		};
+		class ButtonKeyHandler: Life_RscButtonMenu
+		{
+			onButtonClick = "execVM 'scripts\belegung.sqf'";
+
+			idc = -1;
+			text = "Belegung"; //--- ToDo: Localize;
+			x = 0.0875;
+			y = 0.48;
 			w = 0.175;
 			h = 0.04;
 			colorText[] = {1,1,1,1};

@@ -11,7 +11,7 @@ _onScreenTime = 8;
 
 sleep 15; //Wait in seconds before the credits start after player is in-game
  
-_role1 = "Wir präsentieren stolz:";
+_role1 = "Wir prÃ¤sentieren stolz:";
 _role1names = ["Das Zeitalter"];
 _role2 = "Entwickler:";
 _role2names = ["Pitbull","Timeout","Lyca Knight","Ripper","Hightmiky","da'sp||3r"];
@@ -20,9 +20,9 @@ _role3names = ["www.das-zeitalter.de"];
 _role4 = "Teamspeak:";
 _role4names = ["ts3.das-uhrwerk.net"];
 _role5 = "Neues:";
-_role5names = ["Server Version 0.0.2 Alpha","Marktpreise �berarbeitet","Gaswesten","Radarkamera","Neue Map"];
+_role5names = ["Server Version 0.0.3 Alpha","Neue Skins","AntiCheat verbessert","Helikopter DLC","vieles mehr"];
 _role6 = "Bekannte Bugs";
-_role6names = ["Garagen funktionieren teilweise nicht","Z-Menu: Geld geben geht nur bedingt","Weitere Bugs bitte im Forum melden!"];
+_role6names = ["Weitere Bugs bitte im Forum melden!"];
 {
 sleep 2;
 _memberFunction = _x select 0;

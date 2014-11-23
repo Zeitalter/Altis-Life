@@ -2,6 +2,7 @@
 // Function file for Armed Assault
 // Created by: TODO: spll3r
 //////////////////////////////////////////////////////////////////
-
-cutText [Format ["Überfall von %1: Stehen bleiben oder das Feuer wird eröffnet!", Player],"PLAIN",2];
+If (PrimaryWeapon Player != "") Then {
+cutText [Format ["Stehen bleiben %1 oder das Feuer wird eröffnet!", Player],"PLAIN",2];
 foreach (nearEntities ["Man", 50])
+};

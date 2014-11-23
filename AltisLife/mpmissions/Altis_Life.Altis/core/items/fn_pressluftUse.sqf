@@ -14,13 +14,13 @@ closeDialog 0;
 private["_mine","_itemWeight","_diff","_itemName","_val"];
 switch (true) do
 {
-    case (player distance (getMarkerPos "lead_1") < 30): {_mine = "copperore"; _val = 3;};       //den Wert ändern für die Abbauanzahl
-    case (player distance (getMarkerPos "iron_1") < 30): {_mine = "ironore"; _val = 3;};           //den Wert ändern für die Abbauanzahl
-    case (player distance (getMarkerPos "salt_1") < 120) : {_mine = "salt"; _val = 5;};              //den Wert ändern für die Abbauanzahl
-    case (player distance (getMarkerPos "sand_1") < 75) : {_mine = "sand"; _val = 6;};             //den Wert ändern für die Abbauanzahl
-    case (player distance (getMarkerPos "diamond_1") < 50): {_mine = "diamond"; _val = 2;};  //den Wert ändern für die Abbauanzahl
-    case (player distance (getMarkerPos "oil_2") < 40) : {_mine = "oilu"; _val = 2;};                 //den Wert ändern für die Abbauanzahl
-    case (player distance (getMarkerPos "rock_1") < 50): {_mine = "rock"; _val = 3;};              //den Wert ändern für die Abbauanzahl
+    case (player distance (getMarkerPos "lead_1") < 30): {_mine = "copperore"; _val = 6;};       //den Wert ändern für die Abbauanzahl
+    case (player distance (getMarkerPos "iron_1") < 30): {_mine = "ironore"; _val = 6;};           //den Wert ändern für die Abbauanzahl
+    case (player distance (getMarkerPos "salt_1") < 120) : {_mine = "salt"; _val = 8;};              //den Wert ändern für die Abbauanzahl
+    case (player distance (getMarkerPos "sand_1") < 75) : {_mine = "sand"; _val = 9;};             //den Wert ändern für die Abbauanzahl
+    case (player distance (getMarkerPos "diamond_1") < 50): {_mine = "diamond"; _val = 5;};  //den Wert ändern für die Abbauanzahl
+    case (player distance (getMarkerPos "oil_2") < 40) : {_mine = "oilu"; _val = 5;};                 //den Wert ändern für die Abbauanzahl
+    case (player distance (getMarkerPos "rock_1") < 50): {_mine = "rock"; _val = 6;};              //den Wert ändern für die Abbauanzahl
     default {_mine = "";};
 };
 //Mine check

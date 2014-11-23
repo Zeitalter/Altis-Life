@@ -1,5 +1,5 @@
-author = "Tonic";
-onLoadName = "Das Zeitalter V 0.0.2";
+author = "Tonic // modified by da'sp||3r";
+onLoadName = "Das Zeitalter V 0.0.3";
 onLoadMission = "-Anbruch einer neuen Aera-";
 
 joinUnassigned = 1;
@@ -207,7 +207,7 @@ class CfgDebriefing
 	class NotWhitelisted
 	{
 		title = "Mission Failed";
-		subtitle = "Sie müssen sich als Polizist bewerben, um diesen Slot benutzen zu können";
+		subtitle = "Sie mÃ¼ssen sich als Polizist bewerben, um diesen Slot benutzen zu kÃ¶nnen";
 		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
 		pictureBackground = "";
 		picture = "";

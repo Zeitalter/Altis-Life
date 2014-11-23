@@ -173,16 +173,6 @@ switch (_code) do
 		};
 	};
 	
-	/*case 50: //Hände zum Himmel !!! shift + M 
-	{
-        	if(_shift) then {_handled = true;};
-
-        	if (_shift) then
-        		{
-           			 player playMove "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon";
-        		};
-    	};	
-	*/
 	case 48: //shift +B 
 	{
 	         [] execVM "scripts\warn.sqf"; 

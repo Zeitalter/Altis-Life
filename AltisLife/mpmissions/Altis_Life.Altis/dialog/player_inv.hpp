@@ -43,7 +43,7 @@ class playerSettings {
 			idc = 2015;
 
 			x = 0.475;
-			y = 0.64;
+			y = 0.58;
 			w = 0.2;
 			h = 0.12;
 			colorBackground[] = {0,0,0,0.5};
@@ -91,7 +91,7 @@ class playerSettings {
 
 			text = "$STR_PM_MoneyStats"; //--- ToDo: Localize;
 			x = 0.475;
-			y = 0.6;
+			y = 0.54;
 			w = 0.2;
 			h = 0.04;
 			colorBackground[] = {0,0,0,0.8};
@@ -103,7 +103,7 @@ class playerSettings {
 			x = 0.7;
 			y = 0.24;
 			w = 0.2;
-			h = 0.35;
+			h = 0.34;
 			colorBackground[] = {0,0,0,0.5};
 		};
 		class moneyEdit: Life_RscEdit
@@ -123,10 +123,10 @@ class playerSettings {
 			idc = 2022;
 		
 			x = 0.475;
-			y = 0.54;
+			y = 0.72;
 			w = 0.2;
 			h = 0.04;
-			colorBackground[] = {0,0,0,0.8};
+			colorBackground[] = {0,0,0,0.5};
 		};
 		
 		class moneyDrop: Life_RscButtonMenu
@@ -367,6 +367,7 @@ class playerSettings {
             colorText[] = {1,1,1,1};
 		colorBackground[] = {0,0,0,0.8};
         };
+		/*
 		class PlayerTitelNearby: Life_RscText
 		{
 			idc = -1;
@@ -378,5 +379,6 @@ class playerSettings {
 			h = 0.04;
 			colorBackground[] = {0,0,0,0.8};
 		};
+		*/
 	};
 };

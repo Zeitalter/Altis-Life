@@ -1,7 +1,7 @@
 
 player setVariable ["handhoch", true, true]; 
 
-while { player getVariable ["surrender", false] } do {
+while { player getVariable ["handhoch", false] } do {
 player playMove "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon"; 
 
 

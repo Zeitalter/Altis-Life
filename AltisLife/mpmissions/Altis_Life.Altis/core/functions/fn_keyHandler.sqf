@@ -87,10 +87,12 @@ switch (_code) do
 		player playMove "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon"; 	
 		cutText ["Drücke V um Hände herunter zu nehmen","PLAIN",2]; 		
 	};
+	
 	case 47:
 	{
-		player playMoveNow "AmovPercMstpSsurWnonDnon_AmovPercMstpSnonWnonDnon"; 
+		player playMove "AmovPercMstpSsurWnonDnon_AmovPercMstpSnonWnonDnon"; 
 	};
+	
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
@@ -192,13 +194,7 @@ switch (_code) do
 	*/
 	case 48: //shift +B 
 	{
-	if(_shift) then {_handled = true;};
-
-        	if (_shift) then
-        		{
-           			 [] execVM "scripts\warn.sqf"; 
-              	};
-	
+	         [] execVM "scripts\warn.sqf"; 
 	};
 	
 	//F Key

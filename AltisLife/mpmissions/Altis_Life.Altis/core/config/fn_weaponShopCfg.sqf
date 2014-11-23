@@ -97,7 +97,8 @@ switch(_shop) do
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
 						["NVGoggles",nil,2000],
-						["Rangefinder",nil,2000]
+						["Rangefinder",nil,2000],
+						["B_UavTerminal",nil,2000]
 					]
 				];
 			};

@@ -2,30 +2,28 @@
 	File: fn_welcomeNotification.sqf
 	
 	Description:
+	Edit by Heisenberg
 	Called upon first spawn selection and welcomes our player.
 */
-/*format["Willkommen %1, lies unbedingt folgende Hinweise!",name player] hintC
-[
-	"Manche Aktionen kannst du nur mit einem Druck auf die Action-Taste aktivieren.",
-	"Mit der Zeit werden möglichst viele Aktionen mit Maus-Scrollen und Klick dadurch ersetzt!",
-	"",
-	"",
-	"!!! Setze daher UNBEDINGT die 'Action 10'-Taste in der Konfiguration !!!",
-	"Konfigurieren > Steuerung > Indiv. Steuerung > Aktionstaste 10",
-	"Am besten Strg links",
-	"",
-	"",
-	"",
-	"Beispiele für Aktionen mit Action-Taste:",
-	"Fischen",
-	"Sachen aufheben",
-	"Mit Spieler interagieren",
-	"Mit Fahrzeugen interagieren"
-];*/
-
-"" hintC parseText "<t><t size='1.5'>Willkommen auf dem Zeitalter Altis Life Server!</t><br/><t color='#EE0000'>Wichtiger Hinweis:</t><br/><t>Setze UNBEDINGT die Aktion10-Taste in der ARMA 3 -Konfiguration auf z.B. Strg.</t></br><t>Du findest die Einstellung in </t><t color='#00FF00'>Konfigurieren - Steuerung - Indiv. Steuerung - Aktionstaste 10</t></t>";
-
-
-sleep 6;
-
-hintSilent "Hinweis: Drücke H, um einen kleinen Tasten-Guide anzeigen zu lassen.";
+switch (playerSide) do
+{
+	case west:
+	{
+		hint parseText format["<br/><t size='1.2'>Willkommen <t color='#0099FF'>%1</t><br/>Bitte lies folgendes, da es sehr wichtig ist!<t><br/><br/><t><t color='#FFFFFF'>Belege dir unbedingt<t><br/><t><t color='#FF0000'>'Aktionstaste 10'</t><br/> in deiner Individuellen Steuerung. Dies wird deine Interaktionstaste für Fahrzeuge und Objekte in der Welt.<br/><br/> Auf dein Spielermenü kannst du mit <t color='#FF0000'>'Z'</t> zugreifen. Alle weiteren Tastenbelegungen findest du im dort unter dem Punkt <t color='#FF0000'>'Belegung'</t> <br/><br/> Alle Regeln und Bußgelder findest du auf der Karte in den entsprechenden Kategorien.<br/> ",profileName](
+	};
+	
+	case civilian:
+	{
+		hint parseText format["<br/><t size='1.2'>Willkommen <t color='#990099'>%1</t><br/>Bitte lies folgendes, da es sehr wichtig ist!<t><br/><br/><t><t color='#FFFFFF'>Belege dir unbedingt<t><br/><t><t color='#FF0000'>'Aktionstaste 10'</t><br/> in deiner Individuellen Steuerung. Dies wird deine Interaktionstaste für Fahrzeuge und Objekte in der Welt.<br/><br/> Auf dein Spielermenü kannst du mit <t color='#FF0000'>'Z'</t> zugreifen. Alle weiteren Tastenbelegungen findest du im dort unter dem Punkt <t color='#FF0000'>'Belegung'</t> <br/><br/> Alle Regeln und Bußgelder findest du auf der Karte in den entsprechenden Kategorien.<br/> ",profileName](
+	};
+	
+	case independent:
+	{
+		hint parseText format["<br/><t size='1.2'>Willkommen <t color='#009900'>%1</t><br/>Bitte lies folgendes, da es sehr wichtig ist!<t><br/><br/><t><t color='#FFFFFF'>Belege dir unbedingt<t><br/><t><t color='#FF0000'>'Aktionstaste 10'</t><br/> in deiner Individuellen Steuerung. Dies wird deine Interaktionstaste für Fahrzeuge und Objekte in der Welt.<br/><br/> Auf dein Spielermenü kannst du mit <t color='#FF0000'>'Z'</t> zugreifen. Alle weiteren Tastenbelegungen findest du im dort unter dem Punkt <t color='#FF0000'>'Belegung'</t> <br/><br/> Alle Regeln und Bußgelder findest du auf der Karte in den entsprechenden Kategorien.<br/> ",profileName](
+	};
+	
+	case east:
+	{
+		hint parseText format["<br/><t size='1.2'>Willkommen <t color='#FFCC00'>%1</t><br/>Bitte lies folgendes, da es sehr wichtig ist!<t><br/><br/><t><t color='#FFFFFF'>Belege dir unbedingt<t><br/><t><t color='#FF0000'>'Aktionstaste 10'</t><br/> in deiner Individuellen Steuerung. Dies wird deine Interaktionstaste für Fahrzeuge und Objekte in der Welt.<br/><br/> Auf dein Spielermenü kannst du mit <t color='#FF0000'>'Z'</t> zugreifen. Alle weiteren Tastenbelegungen findest du im dort unter dem Punkt <t color='#FF0000'>'Belegung'</t> <br/><br/> Alle Regeln und Bußgelder findest du auf der Karte in den entsprechenden Kategorien.<br/> ",profileName](
+	};
+};

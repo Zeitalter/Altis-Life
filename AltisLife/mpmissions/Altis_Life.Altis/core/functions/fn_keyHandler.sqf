@@ -82,7 +82,11 @@ switch (_code) do
 				player selectWeapon life_curWep_h;
 			};
 		};
+		
+		player playMove "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon";
+	
 	};
+	
 	
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
@@ -173,7 +177,7 @@ switch (_code) do
 		};
 	};
 	
-	case 50: //Hände zum Himmel !!! shift + M 
+	/*case 50: //Hände zum Himmel !!! shift + M 
 	{
         	if(_shift) then {_handled = true;};
 
@@ -182,7 +186,7 @@ switch (_code) do
            			 player playMove "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon";
         		};
     	};	
-	
+	*/
 	case 48: //shift +B 
 	{
 	if(_shift) then {_handled = true;};

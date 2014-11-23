@@ -398,7 +398,7 @@ life_garage_prices =
 	["I_Heli_light_03_F",18000],
 	["B_Heli_Transport_01_F",18000],
 	["O_MRAP_02_hmg_F",50000],
-	["O_Heli_Attack_02_black_F",100],
+	["B_Heli_Attack_01_F",100],
 	["Submarine_01_F",3000000],
 	["B_Heli_Transport_03_unarmed_F",18000]
 ];
@@ -445,7 +445,7 @@ life_garage_sell =
 	["B_Heli_Transport_01_F",500000],
 	["I_Heli_light_03_F",7500],
 	["O_MRAP_02_hmg_F",30000],
-	["O_Heli_Attack_02_black_F",200000],
+	["B_Heli_Attack_01_F",200000],
 	["Submarine_01_F",1000000],
 	["B_Heli_Transport_03_unarmed_F",1000000]
 ];

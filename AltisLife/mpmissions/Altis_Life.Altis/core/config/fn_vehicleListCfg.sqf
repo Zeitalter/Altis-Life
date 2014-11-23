@@ -225,7 +225,7 @@ case "cop_air":
 			if(__GETC__(life_coplevel) > 5) then
 			{
 				_return set[count _return,
-				["O_Heli_Attack_02_black_F",250000]];
+				["B_Heli_Attack_01_F",250000]];
 			};
 		};
 	};

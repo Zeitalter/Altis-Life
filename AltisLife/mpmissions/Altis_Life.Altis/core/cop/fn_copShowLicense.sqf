@@ -7,7 +7,7 @@ Link : http://www.global-gamer.com/home/wbb/index.php/Thread/509-Turorial-Polize
 Beschreibung : Fuegt einen 'Polizeiausweis' hinzu, den man ueber scrollen Zivilisten zeigen kann
 */
 
-private["_target", "_message","_coplevel","_rang"];
+private["_target", "_message","_coplevel","_rang","_nr"];
 
 _target = cursorTarget;
 

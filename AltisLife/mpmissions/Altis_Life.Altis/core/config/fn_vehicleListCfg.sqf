@@ -136,40 +136,39 @@ case "cop_car":
 	{
 		if(! license_cop_sek) then
 		{
-	       		_return set[count _return, 
-				["C_Offroad_01_F",5000]];
-				_return set[count _return,
-				["B_Quadbike_01_F",2500]];
+	       			_return set[count _return, 
+					["C_Offroad_01_F",5000]];
+					_return set[count _return,
+					["B_Quadbike_01_F",2500]];
+				if(__GETC__(life_coplevel) > 1) then
+				{
+					_return set[count _return,
+					["C_Hatchback_01_F",10100]];
+					_return set[count _return,
+					["C_Hatchback_01_sport_F",20000]];
+					_return set[count _return,
+					["C_SUV_01_F",30000]];
+				};
+				if(__GETC__(life_coplevel) > 2) then
+				{
+					_return set[count _return,
+					["B_MRAP_01_F",75000]];
+					_return set[count _return,
+					["I_Truck_02_covered_F",40000]];
+				};
+				if(__GETC__(life_coplevel) > 3) then 
+				{
+					_return set[count _return,   
+					["O_MRAP_02_F",95000]];
+				};
+				if(__GETC__(life_coplevel) > 4) then
+				{
+					_return set[count _return,
+					["O_MRAP_02_hmg_F",150000]];
+				};
 		};
-			if(__GETC__(life_coplevel) > 1) then
-			{
-				_return set[count _return,
-				["C_Hatchback_01_F",10100]];
-				_return set[count _return,
-				["C_Hatchback_01_sport_F",20000]];
-				_return set[count _return,
-				["C_SUV_01_F",30000]];
-			};
-			if(__GETC__(life_coplevel) > 2) then
-			{
-				_return set[count _return,
-				["B_MRAP_01_F",75000]];
-				_return set[count _return,
-				["I_Truck_02_covered_F",40000]];
-			};
-			if(__GETC__(life_coplevel) > 3) then 
-			{
-				_return set[count _return,   
-				["O_MRAP_02_F",95000]];
-			};
-			if(__GETC__(life_coplevel) > 4) then
-			{
-				_return set[count _return,
-				["O_MRAP_02_hmg_F",150000]];
-			};
-		};
-	 };
-	
+	};
+		
 case "sek_car":
 	{
 	     if(license_cop_sek) then

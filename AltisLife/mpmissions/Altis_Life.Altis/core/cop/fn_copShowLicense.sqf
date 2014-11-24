@@ -24,18 +24,19 @@ if( !(alive _target) ) then {_target = player;};
 
 _coplevel = call life_coplevel;
 
+_nr = round(random 999999);
+
 switch ( _coplevel ) do
 {
-	case 1: { _rang = "Dein Rang 1"; };
-	case 2: { _rang = "Dein Rang 2"; };
-	case 3: { _rang = "Dein Rang 3"; };
-	case 4: { _rang = "Dein Rang 4"; };
-	case 5: { _rang = "Dein Rang 5"; };
-	case 6: { _rang = "Dein Rang 6"; };
-	case 7: { _rang = "Dein Rang 7"; };
+	case 1: { _rang = "Rang 1 - Recruit"; };
+	case 2: { _rang = "Rang 2 - Officer"; };
+	case 3: { _rang = "Rang 3 - Detective"; };
+	case 4: { _rang = "Rang 4 - Lieutenant"; };
+	case 5: { _rang = "Rang 5 - Major"; };
+	case 6: { _rang = "Rang 6 - Chief"; };
 	default {_rank =  "Error";};
 };
 
-_message = format["<img size='10' color='#FFFFFF' image='textures\marke.paa'/><br/><br/><t size='2.5'>%1</t><br/><t size='1.8'>%2</t><br/><t size='1'>Polizei Altis</t>", name player, _rang];
+_message = format["<t size='1.6'>ALTIS POLIZEI<br/>DIENSTAUSWEIS</t><br/><br/><t shadow='false'><img size='10 color='#FFFFFF' image='textures\marke.paa'/></t><br/><br/><t size='1.6'><t color='#0099FF'>%1</t></t><br/><br/><t size='1.2'>%2</t><br/><t size='1'>Dienstnr. PP%3</t>", name player, _rang, _nr];
 
 [[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;

@@ -206,15 +206,7 @@ switch (_vehicle) do
 			["textures\fahrzeug\polizei\ifrit_front.paa","cop","textures\fahrzeug\polizei\ifrit_hinten.paa"]
 		];
 	};
-	
-	case "O_Truck_03_device_F":    
-	{
-		_ret = 
-		[
-			["textures\fahrzeug\zivilisten\tempest\baufahrzeug_front.paa","civ","textures\fahrzeug\zivilisten\tempest\baufahrzeug_hinten.paa"]
-		];
-	};
-	
+		
 		case "I_MRAP_03_F":    
 	{
 		_ret = 
@@ -378,13 +370,6 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "B_SDV_01_F":
-	{
-		_ret = 
-		[
-			["textures\fahrzeug\polizei\uboot.paa","cop"]
-		];
-	};
 };
 
 _ret;

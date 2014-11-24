@@ -94,17 +94,6 @@ switch (_vehicle) do
 			case 12: {_color = "SEK"};
 		};
 	};
-/*if(license_civ_adac) then
-{
-	case "C_SUV_01_F":
-	{
-		
-      switch (_index) do
-	   {
-			case 0: {_color = "ADAC"};
-	   };
-	};
-}; */ 			
 
 	case "C_Van_01_box_F":
 	{
@@ -184,15 +173,7 @@ switch (_vehicle) do
 			case 0: {_color = "Polizei"};
 		};
 	};
-	
-	case "O_Truck_03_device_F":   
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Baufahrzeug"};
-		};
-	};
-	
+		
 		case "I_MRAP_03_F":   
 	{
 		switch (_index) do
@@ -333,13 +314,6 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "B_SDV_01_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Polizei"};
-		};
-	};
 };
 
 _color;

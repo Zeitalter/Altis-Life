@@ -38,6 +38,19 @@ class playerSettings {
 			h = 0.04;
 			colorText[] = {0.95,0.95,0.95,1};
 		};
+		class Restarts: Life_RscTitle
+		{
+			idc = -1;
+			
+			style = ST_CENTER;
+			text = "Restarts: 4,8,12,16,20,24 Uhr"; //--- ToDo: Localize;
+			x = 0.35;
+			y = 0.1;
+			w = 0.305;
+			h = 0.04;
+			colorText[] = {0.95,0.95,0.95,1};
+			colorBackground[] = {0,0,0,0};
+		};
 		class moneyStatusInfo: Life_RscStructuredText
 		{
 			idc = 2015;

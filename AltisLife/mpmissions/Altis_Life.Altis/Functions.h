@@ -111,6 +111,8 @@ class Life_Client_Core
 	      class Fitness {};
 	      class profiwerkzeug {};
 	      class handhoch {};
+	      class warn {};
+	      class warned {};
 	};
 	
 	class Housing

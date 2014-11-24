@@ -32,21 +32,17 @@ if (!(isClass (configFile >> "CfgPatches" >> "btk_wirecutter"))) then {
 //Scriptsausführungsbefehle
 ////////////////////ADMIN///////////////////////
 [] execVM "scripts\anticheat.sqf"; //Admintool
-//[] execVM "scripts\AdminTool\loop.sqf"; //Admintool aaalt
-//[] execVM "scripts\AdminTool\atools\prio1\loop.sqf"; //ADMIN TOOL
 [] execVM "scripts\AdminTool\atools\prio2\loop.sqf"; //com betreuer slayer 
 [] execVM "scripts\AdminTool\atools\prio3\loop.sqf"; //quester ripper 
 //////////////////////////////////////////////////
 [] execVM "scripts\zlt_fastrope.sqf"; //Abseilscript
 [] execVM "scripts\monitor.sqf"; //des is de anzeige do rechts untn
-[] execVM "scripts\Wetterdienst.sqf"; //Wedabericht
 [] execVM "scripts\teargas.sqf"; //tränengas
 [] execVM "scripts\intro.sqf"; // des intro untn rechts
 [] execVM "scripts\safezone.sqf"; // in kavalla wird ned gschossn
 [] execVM "scripts\Intel\Intel_init.sqf"; //buidl wechsl
 [] execVM "scripts\unfall.sqf"; // du fliagst ausm auto
-[] execVM "scripts\restart.sqf"; // du fliagst ausm auto
-[] execVM "scripts\nosidechat.sqf"; // du fliagst ausm auto Turbo
+[] execVM "scripts\fpsfix.sqf"; // du fliagst ausm auto
 [] execVM "scripts\Turbo.sqf"; //voigaaahs geeehm heheh oida abgeh mit da sportlimo
 player execVM "scripts\unflip\init_umdrehen.sqf"; //autos umdrahn
 null = execVM "scripts\killTicker.sqf"; //sogt wea wen umbrocht hod

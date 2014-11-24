@@ -24,21 +24,13 @@ switch (_vehicle) do
 			case 5: {_color = "Blau / Weiss"};
 			case 6: {_color = "Badmobil"};
 			case 7: {_color = "Rockstar Lila"};
-			case 8: {_color = "Sticker Beige"};
+			case 8: {_color = "Ganja"};
 			case 9: {_color = "Unicorn"};
 			case 10: {_color = "Ambulanz"};
 			case 11: {_color = "Polizei"};
 		};
 	};
-	
-	case "C_Offroad_01_repair_f" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "ADAC";};
-		};
-	};
-	
+		
 	case "C_Hatchback_01_F":
 	{
 		switch (_index) do

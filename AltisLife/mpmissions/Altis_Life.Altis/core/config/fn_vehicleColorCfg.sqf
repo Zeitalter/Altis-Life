@@ -31,14 +31,6 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "C_Offroad_01_repair_f":
-	{
-		_ret = 
-		[
-			["textures\fahrzeug\adac\offroad_adac.paa","civ"]
-		];
-	};
-
 	case "C_Hatchback_01_F":
 	{
 		_ret =

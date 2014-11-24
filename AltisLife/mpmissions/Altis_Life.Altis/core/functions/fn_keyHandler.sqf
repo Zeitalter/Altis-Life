@@ -108,13 +108,9 @@ switch (_code) do
 		};
 	};
 	
-	case 36: //hend affe
+	case 184: //hend affe
 	{
-		if(_shift) then {_handled = true;};
-
-			if (_shift) then
-		{
-				if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
+			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
 			{
 				if (player getVariable ["handhoch", false]) then
 			{
@@ -124,7 +120,6 @@ switch (_code) do
 					[] spawn life_fnc_handhoch;
 				};
 			};
-		};
 	}; 
 	
 	//Knock out, this is experimental and yeah...
@@ -192,7 +187,7 @@ switch (_code) do
 		};
 	};
 	
-	case 48: //shift +B 
+	case 26: // Ü warnung 
 	{
 	         [] execVM "scripts\warn.sqf"; 
 	};

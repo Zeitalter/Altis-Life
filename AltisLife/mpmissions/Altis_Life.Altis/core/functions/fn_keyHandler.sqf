@@ -187,9 +187,9 @@ switch (_code) do
 		};
 	};
 	
-	case 26: // � warnung 
+	case 26: // Ü warnung 
 	{
-	         [] execVM "scripts\warn.sqf"; 
+	         [] spawn "life_fnc_warn"; 
 	};
 	
 	//F Key
@@ -223,7 +223,7 @@ switch (_code) do
 			};
 		};
 	};
-     ///EMP menü mit K afruafa
+     ///EMP menÃ¼ mit K afruafa
 	case 37:
     {
         if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player && (typeOf vehicle player) in ["B_Heli_Light_01_F","I_Heli_light_03_unarmed_F"])) then
@@ -274,7 +274,7 @@ switch (_code) do
     [] execVM "scripts\AdminTool\atools\prio1\loop.sqf"; //ADMIN TOOL
     };
 	
-	case 25: //P knopf zum schlüessel geben
+	case 25: //P knopf zum schlÃ¼essel geben
      {
      if(playerSide in [west,independent]) then {
      	life_vehicles set[count life_vehicles,cursorTarget];

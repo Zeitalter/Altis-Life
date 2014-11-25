@@ -49,7 +49,7 @@
 		<Key ID="STR_Global_NoSelection">
 			<Original>You did not select anything.</Original>
 			<English>You did not select anything.</English>
-			<German>Du hast nichts ausgewÃ¤hlt.</German>
+			<German>Du hast nichts ausgewählt.</German>
 		</Key>
 		<Key ID="STR_Global_Yes">
 			<Original>Yes</Original>
@@ -341,7 +341,7 @@
 		<Key ID="STR_GNOTF_Controlled">
 			<Original>Your gang already has control over this hideout!</Original>
 			<English>Your gang already has control over this hideout!</English>
-			<German>Deine Gang hat bereits die Kontrolle Ã¼ber dieses Versteck!</German>
+			<German>Deine Gang hat bereits die Kontrolle über dieses Versteck!</German>
 		</Key>
 		<Key ID="STR_GNOTF_Captured">
 			<Original>Only one person shall capture at once!</Original>
@@ -1018,7 +1018,7 @@
 		<Key ID="STR_NOTF_Impounded">
 			<Original>You have impounded a %1\n\nYou have received $%2 for cleaning up the streets!</Original>
 			<English>You have impounded a %1\n\nYou have received $%2 for cleaning up the streets!</English>
-			<German>Du hast einen %1 beschlagnahmt\n\nDu hast $%2 für das AufrÃ¤umen der Straßen bekommen!</German>
+			<German>Du hast einen %1 beschlagnahmt\n\nDu hast $%2 für das Aufräumen der Straßen bekommen!</German>
 		</Key>
 		<Key ID="STR_NOTF_HasImpounded">
 			<Original>%1 has impounded %2's %3</Original>
@@ -1178,7 +1178,7 @@
 		<Key ID="STR_NOTF_ActionInProc">
 			<Original>An action is already being processed...</Original>
 			<English>An action is already being processed...</English>
-			<German>Es wird bereits eine Aktion ausgefÃ¼hrt...</German>
+			<German>Es wird bereits eine Aktion ausgeführt...</German>
 		</Key>
 		<Key ID="STR_NOTF_NoSpace">
 			<Original>You don't have enough space for that amount!</Original>
@@ -1365,7 +1365,7 @@
 		<Key ID="STR_Civ_LicenseRemove_1">
 			<Original>You have lost all your motor vehicle licenses for vehicular manslaughter.</Original>
 			<English>You have lost all your motor vehicle licenses for vehicular manslaughter.</English>
-			<German>Du hast alle deine Fahrzeug-Lizenzen durch fahrlÃ¤ssige Tätung mit einem Fahrzeug verloren.</German>
+			<German>Du hast alle deine Fahrzeug-Lizenzen durch fahrlässige Tötung mit einem Fahrzeug verloren.</German>
 		</Key>
 		<Key ID="STR_Civ_LicenseRemove_2">
 			<Original>You have lost your firearms license for manslaughter.</Original>
@@ -1714,7 +1714,7 @@
 		<Key ID="STR_MISC_NoStorageVeh">
 			<Original>This vehicle isn't capable of storing virtual items.</Original>
 			<English>This vehicle isn't capable of storing virtual items.</English>
-			<German>Dieses Fahrzeug kann keine virtuellen GegenstÃ¤nde speichern.</German>
+			<German>Dieses Fahrzeug kann keine virtuellen Gegenstände speichern.</German>
 		</Key>
 		<Key ID="STR_MISC_Weight">
 			<Original>Weight:</Original>
@@ -1898,7 +1898,7 @@
 		<Key ID="STR_House_SellHouseMSG">
 			<Original>Are you sure you want to sell your house? It will sell for: &lt;t color='#8cff9b'&gt;$%1&lt;/t&gt;</Original>
 			<English>Are you sure you want to sell your house? It will sell for: &lt;t color='#8cff9b'&gt;$%1&lt;/t&gt;.</English>
-			<German>Bist Du sicher, dass du dein Haus verkaufen möchtest? Es wird fÃ¼r &lt;t color='#8cff9b'&gt;$%1&lt;/t&gt; verkauft</German>
+			<German>Bist Du sicher, dass du dein Haus verkaufen möchtest? Es wird für &lt;t color='#8cff9b'&gt;$%1&lt;/t&gt; verkauft</German>
 		</Key>
 	</Package>
 	<Package name="Vehicle_Service">
@@ -2553,7 +2553,7 @@
 		<Key ID="STR_Process_Processed2">
 			<Original>You have processed %1 into %2 for $%3</Original>
 			<English>You have processed %1 into %2 for $%3</English>
-			<German>Du hast %1 fÃ¼r $%3 in %2 verarbeitet</German>
+			<German>Du hast %1 für $%3 in %2 verarbeitet</German>
 		</Key>
 	</Package>
 	<Package name="Gather_Items">
@@ -2897,7 +2897,7 @@
 		<Key ID="STR_Session_SyncCheater">
 			<Original>Because of some cheater corrupting the BIS MP Framework they have stopped you from enjoying our mission.\n\nYou can try this again in a minute if you feel it is a mistake.</Original>
 			<English>Because of some cheater corrupting the BIS MP Framework they have stopped you from enjoying our mission.\n\nYou can try this again in a minute if you feel it is a mistake.</English>
-			<German>Wegen einiger Cheater ist das BIS MP Framework beschÃ¤digt. Versuche es in einer Minute nochmal.</German>
+			<German>Wegen einiger Cheater ist das BIS MP Framework beschädigt. Versuche es in einer Minute nochmal.</German>
 		</Key>
 		<Key ID="STR_Session_SyncData">
 			<Original>Syncing player information to the server.\n\nPlease wait up to 20 seconds before leaving.</Original>

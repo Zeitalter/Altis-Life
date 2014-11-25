@@ -210,7 +210,7 @@
 		<Key ID="STR_CELL_TextMSGBtn">
 			<Original>Text Message:</Original>
 			<English>Text Message:</English>
-			<German>Nachricht:</German>
+			<German>Nachr. Senden</German>
 		</Key>
 		<Key ID="STR_CELL_TextPolice">
 			<Original>Text Police</Original>
@@ -230,7 +230,7 @@
 		<Key ID="STR_CELL_AdminMSGAll">
 			<Original>Admin Msg All</Original>
 			<English>Admin Msg All</English>
-			<German>Admin-Nachricht an alle</German>
+			<German>Nachr. an Alle</German>
 		</Key>
 		<Key ID="STR_CELL_EMSRequest">
 			<Original>Request EMS</Original>
@@ -1442,7 +1442,7 @@
 		<Key ID="STR_Cop_TicketOver100">
 			<Original>Tickets can not be more than $200,000!</Original>
 			<English>Tickets can not be more than $200,000!</English>
-			<German>Strafzettel können nicht mehr als $200.000 betragen!</German>
+			<German>Strafzettel können nicht mehr als $999.999 betragen!</German>
 		</Key>
 		<Key ID="STR_Cop_TicketGive">
 			<Original>%1 gave a ticket of $%2 to %3</Original>
@@ -2587,12 +2587,12 @@
 		<Key ID="STR_Medic_Online">
 			<Original>Medics Online: %1</Original>
 			<English>Medics Online: %1</English>
-			<German>Sanitäter online: %1</German>
+			<German>Ärzte verfügbar: %1</German>
 		</Key>
 		<Key ID="STR_Medic_Near">
 			<Original>Medics Nearby: %1</Original>
 			<English>Medics Nearby: %1</English>
-			<German>Sanitäter in der Nähe: %1</German>
+			<German>Ärzte in der Nähe: %1</German>
 		</Key>
 		<Key ID="STR_Medic_Request">
 			<Original>%1 is requesting EMS Revive.</Original>

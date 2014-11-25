@@ -309,4 +309,12 @@ class CfgNotifications
 		priority = 5;
 	};
 
+	class CopMessageAll
+	{
+		title = "Infokanal Polizei Altis";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
 };

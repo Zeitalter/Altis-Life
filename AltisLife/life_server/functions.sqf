@@ -216,12 +216,26 @@ compileFinal "
 	hint format[""Admin Nachricht an alle gesendet: %1"",_msg];
 ";
 
+TON_fnc_cell_copmsgall =
+compileFinal "
+	if(isServer) exitWith {};
+	if((call life_coplevel) < 1) exitWith {hint ""Du bist kein Polizist!"";};
+	private[""_msg"",""_from""];
+	_msg = ctrlText 3003;
+	if(_msg == """") exitWith {hint ""Du musst eine Nachricht angeben!"";};
+	
+	[[_msg,name player,6],""TON_fnc_clientMessage"",true,false] spawn life_fnc_MP;
+	[] call life_fnc_cellphone;
+	hint format[""Polizei Nachricht an alle gesendet: %1"",_msg];
+";
+
 publicVariable "TON_fnc_cell_textmsg";
 publicVariable "TON_fnc_cell_textcop";
 publicVariable "TON_fnc_cell_textadmin";
 publicVariable "TON_fnc_cell_adminmsg";
 publicVariable "TON_fnc_cell_adminmsgall";
 publicVariable "TON_fnc_cell_emsrequest";
+publicVariable "TON_fnc_cell_copmsgall";
 //Client Message
 /*
 	0 = private message
@@ -302,6 +316,18 @@ compileFinal "
 			hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>Notfall<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Dich<br/><t color='#33CC33'>Von: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%2"",_from,_msg];
 			
 			[""TextMessage"",[format[""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
+		};
+		
+		case 6 :
+		{
+			private[""_message"",""_admin""];
+			_message = format[""ADMIN NACHRICHT: %1"",_msg];
+			_admin = format[""Gesendet von der Polizei: %1"", _from];
+			hint parseText format [""<t size='2'><t align='center'><t shadow='false'><img size='10 color='#FFFFFF' image='textures\marke.paa'/></t><t color='#0099FF'><br/><br/>INFOKANAL<br/><t size='1.1'>Polizeibehörde Altis</t><br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Spieler<br/><t color='#33CC33'>Von: <t color='#ffffff'>Polizeibehörde Altis<br/><t color='#33CC33'><br/>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
+			
+			[""CopMessageAll"",[""Neue Meldung!""]] call bis_fnc_showNotification;
+			systemChat _message;
+			if((call life_coplevel) > 0) then {systemChat _admin;};
 		};
 	};
 ";

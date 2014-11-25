@@ -189,7 +189,7 @@ switch (_code) do
 	
 	case 26: // Ü warnung 
 	{
-	         [] spawn "life_fnc_warn"; 
+	         [] spawn life_fnc_warn; 
 	};
 	
 	//F Key

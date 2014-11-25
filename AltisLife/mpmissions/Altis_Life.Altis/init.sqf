@@ -19,7 +19,7 @@ if(isDedicated && isNil("life_market_prices")) then
 diag_log "Market prices generated!";
 "life_market_prices" addPublicVariableEventHandler
 {
-diag_log format["Market prices updated! %1", _this select 1];
+diag_log format["Börse lädt neu! %1", _this select 1];
 };
 //Start server fsm
 [] execFSM "core\fsm\server.fsm";
@@ -29,6 +29,9 @@ diag_log "Server FSM executed";
 if (!(isClass (configFile >> "CfgPatches" >> "btk_wirecutter"))) then { 
     _null = [] execVM "scripts\btk_wirecutter\init.sqf"; 
 };
+if (isDedicated) then {
+	[] execVM "scripts\nofog.sqf";
+	};
 //Scriptsausführungsbefehle
 ////////////////////ADMIN///////////////////////
 [] execVM "scripts\anticheat.sqf"; //Admintool

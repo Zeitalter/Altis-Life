@@ -2587,12 +2587,12 @@
 		<Key ID="STR_Medic_Online">
 			<Original>Medics Online: %1</Original>
 			<English>Medics Online: %1</English>
-			<German>Sanitäter online: %1</German>
+			<German>Ärzte verfügbar: %1</German>
 		</Key>
 		<Key ID="STR_Medic_Near">
 			<Original>Medics Nearby: %1</Original>
 			<English>Medics Nearby: %1</English>
-			<German>Sanitäter in der Nähe: %1</German>
+			<German>Ärzte in der Nähe: %1</German>
 		</Key>
 		<Key ID="STR_Medic_Request">
 			<Original>%1 is requesting EMS Revive.</Original>

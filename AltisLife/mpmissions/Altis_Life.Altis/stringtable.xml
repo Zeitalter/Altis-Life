@@ -210,7 +210,7 @@
 		<Key ID="STR_CELL_TextMSGBtn">
 			<Original>Text Message:</Original>
 			<English>Text Message:</English>
-			<German>Nachricht:</German>
+			<German>Nachr. Senden:</German>
 		</Key>
 		<Key ID="STR_CELL_TextPolice">
 			<Original>Text Police</Original>
@@ -230,7 +230,7 @@
 		<Key ID="STR_CELL_AdminMSGAll">
 			<Original>Admin Msg All</Original>
 			<English>Admin Msg All</English>
-			<German>Admin-Nachricht an alle</German>
+			<German>Nachr. an Alle</German>
 		</Key>
 		<Key ID="STR_CELL_EMSRequest">
 			<Original>Request EMS</Original>

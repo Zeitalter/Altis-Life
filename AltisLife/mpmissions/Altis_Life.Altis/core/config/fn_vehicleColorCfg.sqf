@@ -179,9 +179,9 @@ switch (_vehicle) do
 			["textures\fahrzeug\rebellen\ifrit\winter_front.paa","reb","textures\fahrzeug\rebellen\ifrit\winter_hinten.paa"],
 			["textures\fahrzeug\notarzt\ifrit_front.paa","med","textures\fahrzeug\notarzt\ifrit_hinten.paa"],
 			["textures\fahrzeug\polizei\ifrit_front.paa","cop","textures\fahrzeug\polizei\ifrit_hinten.paa"],
+			["textures\fahrzeug\rebellen\ifrit\mbt_02_ext01_co.paa","reb","textures\fahrzeug\rebellen\ifrit\mbt_02_ext02_co.paa"],
 			["textures\fahrzeug\adac\Ifrit_adac2_Front.paa","civ","textures\fahrzeug\adac\Ifrit_adac2_hinten.paa"],
-			["textures\fahrzeug\adac\Ifrit_adac2_Front.paa","cop","textures\fahrzeug\adac\Ifrit_adac2_hinten.paa"],
-			["textures\fahrzeug\rebellen\ifrit\mbt_02_ext01_co.paa","reb","textures\fahrzeug\rebellen\ifrit\mbt_02_ext02_co.paa"]
+			["textures\fahrzeug\adac\Ifrit_adac2_Front.paa","cop","textures\fahrzeug\adac\Ifrit_adac2_hinten.paa"]
 		];
 		if(license_civ_adac) then 
 		{ 
@@ -190,13 +190,6 @@ switch (_vehicle) do
 			["textures\fahrzeug\adac\Ifrit_adac2_Front.paa","civ","textures\fahrzeug\adac\Ifrit_adac2_hinten.paa"]
 		];
 		};
-		/*if(! license_civ_adac) then 
-		{ 
-		_ret = 
-		[
-			["textures\fahrzeug\adac\Ifrit_adac2_Front.paa","cop","textures\fahrzeug\adac\Ifrit_adac2_hinten.paa"]
-		];
-		};  */
 	};
 	
 	case "O_MRAP_02_hmg_F":      

@@ -24,7 +24,7 @@ switch (_vehicle) do
 			case 5: {_color = "Blau / Weiss"};
 			case 6: {_color = "Badmobil"};
 			case 7: {_color = "Rockstar Lila"};
-			case 8: {_color = "Sticker Beige"};
+			case 8: {_color = "Ganja"};
 			case 9: {_color = "Unicorn"};
 			case 10: {_color = "Ambulanz"};
 			case 11: {_color = "Polizei"};
@@ -162,7 +162,7 @@ switch (_vehicle) do
 			case 1: {_color = "Winter"};
 			case 2: {_color = "Ambulanz"};
 			case 3: {_color = "Polizei"};
-			case 7: {_color = "Rebellen Tarnfleck"};			
+			case 4: {_color = "Rebellen Tarnfleck"};			
 		};
 	};
 	

@@ -22,7 +22,7 @@ if(!(str(player) in ["cop_1","cop_2","cop_3","cop_4"])) then {
 		sleep 35;
 	};
 };
-// für jedn hanswuaschtn an andan paycheck///////
+// fÃ¼r jedn hanswuaschtn an andan paycheck///////
 switch (__GETC__(life_coplevel)) do 
 			{
 	             case 1: {life_paycheck = life_paycheck + 2000;}; // Rank 1
@@ -71,7 +71,7 @@ player setVariable["coplevel",(__GETC__(life_coplevel)),true];
     while {true} do
     {
         waitUntil {uniform player == "U_B_CombatUniform_mcam_tshirt"};
-        player setObjectTextureGlobal [0,"textures\uniform\cop\cop3.paa"]; // Kommissar
+        player setObjectTextureGlobal [0,"textures\uniform\cop\cop5.paa"]; // Kommissar
         waitUntil {uniform player != "U_B_CombatUniform_mcam_tshirt"};
     };
 }; 

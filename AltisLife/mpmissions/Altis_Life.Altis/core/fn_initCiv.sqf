@@ -42,9 +42,9 @@ if(life_is_arrested) then
 {
     while {true} do
     {
-        waitUntil {uniform player == "U_B_CTRG_2"};
-        player setObjectTextureGlobal [0,"textures\uniform\reb\tarn.paa"]; //gschmarre do GorkaTarnanzug
-        waitUntil {uniform player != "U_B_CTRG_2"};
+        waitUntil {uniform player == "U_B_HeliPilotCoveralls"};
+        player setObjectTextureGlobal [0,"textures\uniform\reb\u1987.paa"]; //gschmarre do GorkaTarnanzug
+        waitUntil {uniform player != "U_B_HeliPilotCoveralls"};
     };
 };
 ////////////////////////////////////////////////////////////////////

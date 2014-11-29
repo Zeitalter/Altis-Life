@@ -163,9 +163,9 @@ switch (_vehicle) do
 		[
 			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","civ"],
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"],
-			["textures\fahrzeug\rebellen\hunter\winter_front.paa","reb","textures\fahrzeug\rebellen\hunter\winter_hinten.paa"],
-			["textures\fahrzeug\rebellen\hunter\graywolf_front.paa","reb","textures\fahrzeug\rebellen\hunter\graywolf_hinten.paa"],
-			["textures\fahrzeug\rebellen\hunter\jungle_front.paa","reb","textures\fahrzeug\rebellen\hunter\jungle_hinten.paa"],
+			["textures\fahrzeug\rebellen\hunter\nebel.paa","reb","textures\fahrzeug\hunteruniversalhinten.paa"],
+			["textures\fahrzeug\rebellen\hunter\hunterbj.paa","reb","textures\fahrzeug\hunteruniversalhinten.paa"],
+			["textures\fahrzeug\rebellen\hunter\jungle_front.paa","reb","textures\fahrzeug\hunteruniversalhinten.paa"],
 			["textures\fahrzeug\polizei\hunter_front.paa","cop","textures\fahrzeug\polizei\hunter_hinten.paa"],
 			["textures\fahrzeug\sek\hunter_front.paa","sek","textures\fahrzeug\sek\hunter_hinten.paa"]
 		];

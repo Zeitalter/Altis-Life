@@ -146,8 +146,8 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Regular"};
 			case 1: {_color = "Schwarz"};
-	        	case 2: {_color = "Winter"};
-	        	case 3: {_color = "Schwarz-Blau"};
+	        	case 2: {_color = "Nebel"};
+	        	case 3: {_color = "Hunter V.1987"};
 	        	case 4: {_color = "Jungle Camo"};
 	        	case 5: {_color = "Polizei"};
 			case 6: {_color = "SEK"};

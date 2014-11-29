@@ -15,7 +15,7 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 	sleep 35;
 };
 ///////////////////////////////////////////////////
-switch (__GETC__(life_medlevel)) do 
+switch (__GETC__(life_mediclevel)) do 
 			 {
 	             case 1: {life_paycheck = life_paycheck + 6500;}; // Rank 1
 	             case 2: {life_paycheck = life_paycheck + 10500;}; // Rank 2
@@ -46,47 +46,6 @@ switch (__GETC__(life_medlevel)) do
         		waitUntil {uniform player != "U_C_WorkerCoveralls"};
     		};
 	};
-
-/*
-if((__GETC__(life_medicLevel)) < 2)
-{
-	[] spawn
-	{
-	    	while {true} do
-    		{
-        		waitUntil {uniform player == "U_Rangemaster"};
-        		player setObjectTextureGlobal [0,"textures\uniform\medic\sanitäter_kleidung.paa"]; //Rekrut
-        		waitUntil {uniform player != "U_Rangemaster"};
-    		};
-	};
-};
-
-if((__GETC__(life_medicLevel)) < 3)
-{
-	[] spawn
-	{
-	    	while {true} do
-    		{
-        		waitUntil {uniform player == "U_Rangemaster"};
-        		player setObjectTextureGlobal [0,"textures\uniform\medic\notarzt_kleidung.paa"]; //Rekrut
-        		waitUntil {uniform player != "U_Rangemaster"};
-    		};
-	};
-};
-
-if((__GETC__(life_medicLevel)) < 4
-{
-	[] spawn
-	{
-	    	while {true} do
-    		{
-        		waitUntil {uniform player == "U_Rangemaster"};
-        		player setObjectTextureGlobal [0,"textures\uniform\medic\chefarzt_kleidung.paa"]; //Rekrut
-        		waitUntil {uniform player != "U_Rangemaster"};
-    		};
-	};
-};
-*/
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.

@@ -1,8 +1,0 @@
-//////////////////////////////////////////////////////////////////
-// Function file for Armed Assault
-// Created by: spll3r 
-// Keine zeit für lange erklärungen
-//////////////////////////////////////////////////////////////////
-
-sign_1 SetObjectTextureGlobal [0,"scripts\Intel\Pictures\bild5.paa"];";
-ProcessInitCommands;

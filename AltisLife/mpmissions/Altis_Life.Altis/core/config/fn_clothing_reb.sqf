@@ -26,7 +26,8 @@ switch (_filter) do
 			["U_O_CombatUniform_ocamo",nil,15610],
 			["U_B_PilotCoveralls",nil,15610],
 			["U_O_CombatUniform_oucamo",nil,15610],
-			["U_I_CombatUniform","Gorka-Tarnanzug",15610], //U_B_CTRG_2
+			["U_I_CombatUniform","Gorka-Tarnanzug",15610], //U_B_CTRG_2 // U_B_HeliPilotCoveralls 
+			["U_B_HeliPilotCoveralls","Anzug V.1987",15610],
 			["U_B_CTRG_2","Sithkampfanzug",15610],
 			["U_IG_Guerilla1_1",nil,15610],
 			["U_IG_leader","Guerilla Leader",15340],

@@ -44,12 +44,10 @@ if (isDedicated) then {
 [] execVM "scripts\intro.sqf"; // des intro untn rechts
 [] execVM "scripts\safezone.sqf"; // in kavalla wird ned gschossn
 [] execVM "scripts\Intel\Intel_init.sqf"; //buidl wechsl
-[] execVM "scripts\unfall.sqf"; // du fliagst ausm auto
 [] execVM "scripts\fpsfix.sqf"; // du fliagst ausm auto
-[] execVM "scripts\Turbo.sqf"; //voigaaahs geeehm heheh oida abgeh mit da sportlimo
 player execVM "scripts\unflip\init_umdrehen.sqf"; //autos umdrahn
 null = execVM "scripts\killTicker.sqf"; //sogt wea wen umbrocht hod
-// null =[] execVM "scripts\heliCrash\crashInit.sqf"; //voigas in bon eine
+null =[] execVM "scripts\heliCrash\crashInit.sqf"; //voigas in bon eine
 _igiload = execVM "scripts\IgiLoad\IgiLoadInit.sqf"; //Cargoscript
 [] spawn life_fnc_autoSave; // autosave
 //logistic

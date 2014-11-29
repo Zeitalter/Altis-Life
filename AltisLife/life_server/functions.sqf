@@ -257,10 +257,10 @@ compileFinal "
 		case 0 :
 		{
 			private[""_message""];
-			_message = format["">>>MESSAGE FROM %1: %2"",_from,_msg];
-			hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>Neue Nachricht<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>You<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
+			_message = format[""SMS VON %1: %2"",_from,_msg];
+			hint parseText format [""<img shadow='false' image='bilder\telefon\connmessage_co.paa'  size='6.5'/><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Dich</t><br/><t color='#00adef'>Von: </t><t color='#ffffff'>%1</t><br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%2</t><t/>"",_from,_msg]
 			
-			[""TextMessage"",[format[""Du hast eine private Nachricht erhalten von %1"",_from]]] call bis_fnc_showNotification;
+			[""TextMessage"",[format[""Du hast eine SMS erhalten von %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
 		};
 		
@@ -268,10 +268,11 @@ compileFinal "
 		{
 			if(side player != west) exitWith {};
 			private[""_message""];
-			_message = format[""---911 DISPATCH FROM %1: %2"",_from,_msg];
-			hint parseText format [""<t color='#316dff'><t size='2'><t align='center'>Neue Auftrag<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Einheiten<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%2"",_from,_msg];
+			_message = format[""EINGEHENDER AUFTRAG VON %1: %2"",_from,_msg];
+			_nr = round(random 99999);
+			hint parseText format [""<t align='center'><t color='#0099FF'><t size='1.7'>Eingehender Auftrag</t></t><br/><img size='4' color='#FFFFFF' shadow='false' image='textures\marke.paa'/><br/><t color='#316dff'><t color='#FFFFFF'>Auftragsnr. AZ%3</t></t><br/><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Alle Einheiten</t><br/><t color='#00adef'>Von: </t><t color='#ffffff'>%1</t><br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%2</t>"",_from,_msg,_nr];
 			
-			[""PoliceDispatch"",[format[""Neuer Auftrag von: %1"",_from]]] call bis_fnc_showNotification;
+			[""PoliceDispatch"",[format[""Eingehender Auftrag von %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
 		};
 		
@@ -289,11 +290,11 @@ compileFinal "
 		case 3 :
 		{
 			private[""_message""];
-			_message = format[""!!!ADMIN MESSAGE: %1"",_msg];
-			_admin = format[""Sent by admin: %1"", _from];
-			hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Admin Nachricht<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Dich<br/><t color='#33CC33'>Von: <t color='#ffffff'>Admin<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
+			_message = format[""ADMIN NACHRICHT: %1"",_msg];
+			_admin = format[""Gesendet von einem Admin: %1"", _from];
+			hint parseText format [""<img shadow='false' image='bilder\telefon\zeitalter_co.paa' color='#FF0000'  size='3.4'/><br/><t color='#FF0000'><t align='center'><t size='1.7'>ADMIN NACHRICHT</t></t></t><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Dich</t><br/><t color='#00adef'>Von: <t color='#ffffff'>Zeitalter Admin-Team<br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%1<t/>"",_msg];  
 			
-			[""AdminMessage"",[""You Have Received A Message From An Admin!""]] call bis_fnc_showNotification;
+			[""AdminMessage"",[""Du hast eine Admin Nachricht erhalten!""]] call bis_fnc_showNotification;
 			systemChat _message;
 			if((call life_adminlevel) > 0) then {systemChat _admin;};
 		};
@@ -303,9 +304,9 @@ compileFinal "
 			private[""_message"",""_admin""];
 			_message = format[""ADMIN NACHRICHT: %1"",_msg];
 			_admin = format[""Gesendet von einem Admin: %1"", _from];
-			hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Admin Nachricht<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Spieler<br/><t color='#33CC33'>Von: <t color='#ffffff'><br/>Admins<br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
+			hint parseText format [""<img shadow='false' image='bilder\telefon\zeitalter_co.paa' color='#FF0000'  size='3.4'/><br/><t color='#FF0000'><t align='center'><t size='1.7'>ADMIN NACHRICHT</t></t></t><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Alle Spieler</t><br/><t color='#00adef'>Von: <t color='#ffffff'>Zeitalter Admin-Team<br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%1<t/>"",_msg];  
 			
-			[""AdminMessage"",[""Du hast eine Nachricht von einem Admin bekommen!""]] call bis_fnc_showNotification;
+			[""AdminMessage"",[""Du hast eine Admin Nachricht erhalten!""]] call bis_fnc_showNotification;
 			systemChat _message;
 			if((call life_adminlevel) > 0) then {systemChat _admin;};
 		};
@@ -313,7 +314,7 @@ compileFinal "
 		case 5: {
 			private[""_message""];
 			_message = format[""NOTFALL: %1"",_msg];
-			hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>Notfall<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Dich<br/><t color='#33CC33'>Von: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%2"",_from,_msg];
+			hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Notfall<br/><br/><t color='#00adef'><t align='left'><t size='1'>An: <t color='#ffffff'>Dich<br/><t color='#00adef'>Von: <t color='#ffffff'>%1<br/><br/><t color='#00adef'>Nachricht:<br/><t color='#ffffff'>%2"",_from,_msg];
 			
 			[""TextMessage"",[format[""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
 		};
@@ -323,7 +324,7 @@ compileFinal "
 			private[""_message"",""_admin""];
 			_message = format[""ADMIN NACHRICHT: %1"",_msg];
 			_admin = format[""Gesendet von der Polizei: %1"", _from];
-			hint parseText format [""<t size='2'><t align='center'><t shadow='false'><img size='10 color='#FFFFFF' image='textures\marke.paa'/></t><t color='#0099FF'><br/><br/>INFOKANAL<br/><t size='1.1'>Polizeibehörde Altis</t><br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Spieler<br/><t color='#33CC33'>Von: <t color='#ffffff'>Polizeibehörde Altis<br/><t color='#33CC33'><br/>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
+			hint parseText format [""<t size='2'><t align='center'><t shadow='false'><img size='10 color='#FFFFFF' image='textures\marke.paa'/></t><t color='#0099FF'><br/><br/>INFOKANAL<br/><t size='1.1'>Polizeibehörde Altis</t><br/><br/><t color='#00adef'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Spieler<br/><t color='#00adef'>Von: <t color='#ffffff'>Polizeibehörde Altis<br/><t color='#00adef'><br/>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
 			
 			[""CopMessageAll"",[""Neue Meldung!""]] call bis_fnc_showNotification;
 			systemChat _message;

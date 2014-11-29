@@ -74,12 +74,10 @@ switch(_shop) do
 			{
 				["Ausrüstungs Shop",
 					[
-						["arifle_sdar_F","Taser Rifle",20000], // arifle_MXC_F 
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
 						["arifle_MXC_F","MXC (Meister-Anwaerter)",25000],
 						["30Rnd_65x39_caseless_mag",nil,200],
-						["hgun_P07_F",nil,7500],
-						["16Rnd_9x21_Mag",nil,50],
+						["hgun_Pistol_heavy_01_snds_F","Gasdruck Pistole",7500],
+						["11Rnd_45ACP_Mag","10g NBR Geschoss",50],
 						["muzzle_snds_L",nil,650],
 						["HandGrenade_Stone","Flashbang",1700],
 						["MineDetector",nil,1000],
@@ -115,8 +113,9 @@ switch(_shop) do
 			{
 				["Wachtmeister Ausrüstungs Shop",
 					[
-						["arifle_sdar_F","Taser Rifle",20000], // arifle_MXC_F 
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
+						["hgun_Pistol_heavy_01_snds_F","Gasdruck Pistole",7500],
+						["11Rnd_45ACP_Mag","10g NBR Geschoss",50], //optic_MRD
+						["optic_MRD","GdP-Zielvorrichtung",50],
 						["arifle_MXC_F",nil,25000],
 						["30Rnd_65x39_caseless_mag",nil,200], // SMG_02_F  arifle_MX_GL_Black_F 
 						["arifle_MX_GL_Black_F",nil,30000],
@@ -160,12 +159,11 @@ switch(_shop) do
 			{
 				["Kommissar Ausrüstungs Shop",
 					[
-						["arifle_sdar_F","Taser Rifle",20000],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
-						["hgun_P07_F",nil,7500],
-						["16Rnd_9x21_Mag",nil,50],
-						["hgun_ACPC2_F",nil,17500],
-						["9Rnd_45ACP_Mag",nil,200],
+						["hgun_Pistol_heavy_01_snds_F","Gasdruck Pistole",7500],
+						["11Rnd_45ACP_Mag","10g NBR Geschoss",50], //optic_MRD
+						["optic_MRD","GdP-Zielvorrichtung",50],
+						["hgun_Pistol_heavy_02_F","Treibsatz NBR",17500],
+						["6Rnd_45ACP_Cylinder","20g NBR Geschoss",200],
 						["arifle_MXC_F",nil,30000],
 						["30Rnd_65x39_caseless_mag",nil,100],
 						["arifle_MX_F",nil,35000],
@@ -222,12 +220,11 @@ switch(_shop) do
 			{
 				["Hauptkommissar Ausrüstungs Shop",
 					[
-						["arifle_sdar_F","Taser Rifle",20000],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
-						["hgun_P07_F",nil,7500],
-						["16Rnd_9x21_Mag",nil,50],
-						["hgun_ACPC2_F",nil,17500],
-						["9Rnd_45ACP_Mag",nil,200],
+						["hgun_Pistol_heavy_01_snds_F","Gasdruck Pistole",7500],
+						["11Rnd_45ACP_Mag","10g PCE Geschoss",50], //optic_MRD
+						["optic_MRD","GdP-Zielvorrichtung",50],
+						["hgun_Pistol_heavy_02_F","Treibsatz PCE",17500],
+						["6Rnd_45ACP_Cylinder","20g PCE Geschoss",200],
 						["arifle_MXC_F",nil,30000],
 						["30Rnd_65x39_caseless_mag",nil,100],
 						["arifle_MX_F",nil,35000],
@@ -287,12 +284,11 @@ switch(_shop) do
 			{
 				["PolizeiChef Ausrüstungs Shop",
 					[
-						["arifle_sdar_F","Taser Rifle",20000],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
-						["hgun_P07_F",nil,7500],
-						["16Rnd_9x21_Mag",nil,50],
-						["hgun_ACPC2_F",nil,17500],
-						["9Rnd_45ACP_Mag",nil,200],
+						["hgun_Pistol_heavy_01_snds_F","Gasdruck Pistole",7500],
+						["11Rnd_45ACP_Mag","10g PCE Geschoss",50], //optic_MRD
+						["optic_MRD","GdP-Zielvorrichtung",50],
+						["hgun_Pistol_heavy_02_F","Treibsatz PCE",17500],
+						["6Rnd_45ACP_Cylinder","20g PCE Geschoss",200],
 						["arifle_Katiba_F",nil,60000],
 						["arifle_Katiba_GL_F",nil,90000],
 						["30Rnd_65x39_caseless_green",nil,275],

@@ -15,13 +15,15 @@ player addUniform "U_Rangemaster";
 player addVest "V_Rangemaster_belt";
 player addBackPack "B_Carryall_khk";
 
-player addWeapon "hgun_P07_snds_F";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
+player addWeapon "hgun_Pistol_heavy_01_snds_F";
+player addMagazine "11Rnd_45ACP_Mag";
+player addMagazine "11Rnd_45ACP_Mag";
+player addMagazine "11Rnd_45ACP_Mag";
+player addMagazine "11Rnd_45ACP_Mag";
+player addMagazine "11Rnd_45ACP_Mag";
+player addMagazine "11Rnd_45ACP_Mag";
+player addMagazine "11Rnd_45ACP_Mag";
+player addMagazine "11Rnd_45ACP_Mag";
 
 /* ITEMS */
 player addItem "ItemMap";
@@ -34,7 +36,7 @@ player addItem "ItemGPS";
 player assignItem "ItemGPS";
 player addweapon "NVGoggles";
 
-[[player,0,"textures\uniform\cop\cop1.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
+[[player,0,"textures\uniform\cop\cop6_co.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 
 
 

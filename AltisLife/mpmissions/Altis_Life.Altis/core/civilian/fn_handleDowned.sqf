@@ -14,7 +14,7 @@ if(_shooter isKindOf "Man" && alive player) then
 	if(!life_isdowned) then
 	{
 		life_isdowned = true;
-		player setDamage 0.5;
+		//player setDamage 0.5;
 		
 		_curWep = currentWeapon player;
 		_curMags = magazines player;
@@ -36,13 +36,13 @@ if(_shooter isKindOf "Man" && alive player) then
 		_obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL _unit);
 		_obj setPosATL (getPosATL _unit);
 		[[player,"AinjPfalMstpSnonWnonDf_carried_fallwc"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-		[[0,format["%1 wurde mit Gummigeschossen auﬂer Gefecht gesetzt.", name _unit, name _shooter]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		//[[0,format["%1 wurde mit Gummigeschossen auﬂer Gefecht gesetzt.", name _unit, name _shooter]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		_unit attachTo [_obj,[0,0,0]];
 		disableUserInput true;
 		sleep 8;
 		if(!(player getVariable "restrained")) then {
 			[[player,"AinjPpneMstpSnonWrflDnon"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-			sleep 22;
+			sleep 10;
 		};
 		// Check Restrain every 15 seconds for "disableUserInput"
 		// I¥m sure, it can be done better. Haven¥t find a better way until now.

@@ -53,7 +53,7 @@ if(!isNull _source) then {
 if(!isNull _source) then {
 	if(_source != _unit) then {
 		_curMag = currentMagazine _source;
-		if (_curMag in ["16Rnd_9x21_Mag"] && _projectile in ["B_9x21_Ball"]) then {
+		if (_curMag in ["11Rnd_45ACP_Mag","6Rnd_45ACP_Cylinder"] && _projectile in ["B_45ACP_Ball"]) then {
 			if((side _source == west && playerSide != west)) then {
 				private["_isVehicle","_isQuad"];
 				_isVehicle = if(vehicle player != player) then {true} else {false};

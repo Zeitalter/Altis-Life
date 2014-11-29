@@ -266,7 +266,8 @@ class Life_Client_Core
 		class startBlinker {}; 
 		class startBlinkertwo {}; 
 		class leftl {}; 
-		class rightl {}; 
+		class rightl {};
+		class handleDowned {}; 
 	};
 	
 	class Vehicle

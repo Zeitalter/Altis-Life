@@ -23,6 +23,7 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret pushBack ["U_B_CombatUniform_mcam_tshirt","Kommissar",350]; //Kommissar
+			_ret pushBack ["U_O_Wetsuit",nil,350]; //Taucher Camo
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
@@ -69,7 +70,7 @@ case 1:
 		{
 			_ret  pushBack ["H_Beret_Colonel","Barret Komissar",100];
 			_ret  pushBack ["H_Bandanna_khk_hs","Bandana Headset",100];
-			_ret  pushBack ["H_MilCap_oucamo","Militärs Mütze",550];
+			_ret  pushBack ["H_MilCap_oucamo","Militärmütze",550];
 			_ret  pushBack ["H_Cap_headphones","Rangemaster Cap",75];	
 		};
 		if(__GETC__(life_coplevel) > 5) then 
@@ -123,7 +124,7 @@ case 1:
 	{
 		_ret  pushBack ["V_Rangemaster_belt",nil,800];
 		_ret  pushBack ["V_TacVest_blk_POLICE",nil,800];
-		_ret  pushBack ["V_TacVestIR_blk","Traenengasweste",950];
+		_ret  pushBack ["V_TacVestIR_blk","Tränengasweste",950];
 		if(__GETC__(life_coplevel) > 0) then
 		{
 		    _ret  pushBack ["V_RebreatherIA","Tauchgerät",550];
@@ -134,7 +135,7 @@ case 1:
 		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
-			_ret  pushBack ["V_TacVestIR_blk","Traenengas Schutzweste",550];  //tr�nengasschutzweste 	V_TacVestIR_blk
+			_ret  pushBack ["V_TacVestIR_blk","Traenengas Schutzweste",550];  //tränengasschutzweste 	V_TacVestIR_blk
 			_ret  pushBack ["V_TacVest_khk","Polizei Braun",550];
 		};
 		if(__GETC__(life_coplevel) == 4) then
@@ -145,8 +146,8 @@ case 1:
 			_ret  pushBack ["V_HarnessO_gry",nil,750];
 			_ret  pushBack ["V_TacVest_blk_POLICE",nil,750];
 			_ret  pushBack ["V_TacVest_brn",nil,750];
-			_ret  pushBack ["V_TacVestIR_blk","Traenengas Schutzweste",750];
-			_ret  pushBack ["V_RebreatherB",nil,750];
+			_ret  pushBack ["V_TacVestIR_blk","Tränengas Schutzweste",750];
+			_ret  pushBack ["V_RebreatherIR",nil,750];
 		};
 		if(__GETC__(life_coplevel) > 4) then
 		{

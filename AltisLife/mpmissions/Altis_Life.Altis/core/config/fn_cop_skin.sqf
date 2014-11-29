@@ -8,11 +8,11 @@ if (_unit == player) then
 		{
 			case (__GETC__(life_coplevel) == 1) : {player setObjectTextureGlobal [0, "textures\uniform\cop\cop2.paa"]; };
 
-            case (__GETC__(life_coplevel) == 2) : {player setObjectTextureGlobal [0, "textures\uniform\cop\cop3.paa"]; };
+            case (__GETC__(life_coplevel) == 2) : {player setObjectTextureGlobal [0, "textures\uniform\cop\cop5.paa"]; };
 
-            case (__GETC__(life_coplevel) == 3) : {player setObjectTextureGlobal [0, "textures\uniform\cop\cop3.paa"]; };
+            case (__GETC__(life_coplevel) == 3) : {player setObjectTextureGlobal [0, "textures\uniform\cop\cop5.paa"]; };
 
-            case (__GETC__(life_coplevel) == 4) : {player setObjectTextureGlobal [0, "textures\uniform\cop\cop3.paa"]; };
+            case (__GETC__(life_coplevel) == 4) : {player setObjectTextureGlobal [0, "textures\uniform\cop\cop5.paa"]; };
 
             case (__GETC__(life_coplevel) == 5) : {player setObjectTextureGlobal [0, "textures\uniform\cop\cop5.paa"]; };
 

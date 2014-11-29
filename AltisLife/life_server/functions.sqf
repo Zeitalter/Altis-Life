@@ -269,8 +269,8 @@ compileFinal "
 			if(side player != west) exitWith {};
 			private[""_message"",""_nr""];
 			_message = format[""EINGEHENDER AUFTRAG VON %1: %2"",_from,_msg];
-			_nr = round(random 99999);
-			hint parseText format [""<t align='center'><t color='#0099FF'><t size='1.7'>Eingehender Auftrag</t></t><br/><img size='4' color='#FFFFFF' shadow='false' image='textures\marke.paa'/><br/><t color='#316dff'><t color='#FFFFFF'>Auftragsnr. AZ%3</t></t><br/><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Alle Einheiten</t><br/><t color='#00adef'>Von: </t><t color='#ffffff'>%1</t><br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%2</t>"",_from,_msg,_nr];
+		//	_nr = round(random 99999);
+			hint parseText format [""<t align='center'><t color='#0099FF'><t size='1.7'>Eingehender Auftrag</t></t><br/><img size='4' color='#FFFFFF' shadow='false' image='textures\marke.paa'/><br/><t color='#316dff'><t color='#FFFFFF'>Auftragsnr. 15ds1</t></t><br/><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Alle Einheiten</t><br/><t color='#00adef'>Von: </t><t color='#ffffff'>%1</t><br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%2</t>"",_from,_msg,_nr];
 			
 			[""PoliceDispatch"",[format[""Eingehender Auftrag von %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;

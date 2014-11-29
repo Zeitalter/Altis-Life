@@ -38,7 +38,7 @@ if(_shooter isKindOf "Man" && alive player) then
 		[[player,"AinjPfalMstpSnonWnonDf_carried_fallwc"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 		//[[_unit,"AinjPfalMstpSnonWnonDf_carried_fallwc"],"fnc_animsync",true,false] spawn life_fnc_MP;
 		//[[0,format[localize "STR_NOTF_Tazed", _unit getVariable["realname",name _unit], _shooter getVariable["realname",name _shooter]]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-		[[0,format["Du hast %1 getazert!", _unit getVariable["realname",name _unit]]],"life_fnc_broadcast",_shooter,true,false] spawn life_fnc_MP;
+		//[[0,format["Du hast %1 getazert!", _unit getVariable["realname",name _unit]]],"life_fnc_broadcast",_shooter,true,false] spawn life_fnc_MP;
 		_unit attachTo [_obj,[0,0,0]];
 		disableUserInput true;
 		sleep 15;

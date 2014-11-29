@@ -28,6 +28,7 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_ret pushBack ["U_B_CTRG_1","Uniform2014",1250]; //Hauptkommissar / Kappo U_B_survival_uniform U_I_HeliPilotCoveralls
+			_ret pushBack ["U_B_CombatUniform_mcam_vest","Uniform2014 Ärmel",1250]; //Hauptkommissar 
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{

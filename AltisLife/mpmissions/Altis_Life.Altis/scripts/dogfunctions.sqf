@@ -54,7 +54,7 @@ _growl = (_this select 3) select 1;
 play = (_this select 3) select 2;
 _idle = (_this select 3) select 3;
 _vehicle = (_this select 3) select 4;
-_sound = ["whistle",_unit, 20] spawn play;
+//_sound = ["whistle",_unit, 20] spawn play;
 hint "Jessie, apport!";
 sleep 1;
 _unit setvariable ["follow",'false'];
@@ -95,7 +95,7 @@ _unit1 setVariable ["order","idle"];
 _unit1 setVariable ["step","go"];
 _unit1 setVariable ["seek","false"];
 _dog doMove (getpos _unit1);
-_sound = ["dog_whine",_dog, 20] spawn play;
+//_sound = ["dog_whine",_dog, 20] spawn play;
 };
 
 };
@@ -123,7 +123,7 @@ _dogFollow =
 _unit = (_this select 3) select 0;
 _dog	= _unit getvariable "dog";
 _play	= (_this select 3) select 1;
-_sound = ["dog_one",_dog, 20] spawn _play;
+//_sound = ["dog_one",_dog, 20] spawn _play;
 hint "Jessie, beifuß!";
 _unit setvariable ["order","active"];
 _unit setvariable ["step","go"];
@@ -164,7 +164,7 @@ _nearestunitofside = [];
 
 if(_side countSide _nearestunits > 0) then
 {
-_sound = ["dog_one",_dog, 20] spawn _play;
+//_sound = ["dog_one",_dog, 20] spawn _play;
 {
 _unit = _x;
 if (side _unit == _side) then 
@@ -173,7 +173,7 @@ _nearestunitofside = _nearestunitofside + [_unit]
 };
 } foreach _nearestunits;
 } else {
-_sound = ["dog_ruff",_dog, 20] spawn _play;
+//_sound = ["dog_ruff",_dog, 20] spawn _play;
 _unit setvariable ["order","idle"];
 };
 
@@ -181,7 +181,7 @@ _unit setvariable ["order","idle"];
 _dog domove getpos (_nearestunitofside select 0);
 
 waituntil {(_dog distance (_nearestunitofside select 0))<10};
-_sound = ["dog_ruff",_dog, 20] spawn _play;
+//_sound = ["dog_ruff",_dog, 20] spawn _play;
 
 };
 
@@ -191,7 +191,7 @@ _dogHeel =
 _unit = (_this select 3) select 0;
 _dog = _unit getvariable "dog";
 _play = (_this select 3) select 1;
-_sound = ["dog_one",_dog, 20] spawn _play;
+//_sound = ["dog_one",_dog, 20] spawn _play;
 hint "Jessie heilen!";
 _unit setvariable ["follow",'false'];
 _dog = _unit getvariable "dog";
@@ -223,7 +223,7 @@ _dogStop =
 _unit = (_this select 3) select 0;
 _dog = _unit getVariable "dog";
 _play = (_this select 3) select 1;
-_sound = ["dog_one",_dog, 20] spawn _play;
+//_sound = ["dog_one",_dog, 20] spawn _play;
 _unit setvariable ["seek","false"];
 hint "Jessie, warte!";
 _unit setvariable ["follow",'false'];
@@ -255,32 +255,13 @@ _objs = _objs - [_x];
 if ((count _objs)>0) then
 {
 _play = _this select 1;
-_sound = ["dog_growl",_dog, 11] spawn _play;
+//_sound = ["dog_growl",_dog, 11] spawn _play;
 };
 
 sleep _timer;
 _dog = _unit getvariable "dog";
 
 };
-
-};
-
-_playSound =
-{
-
-_soundPath = [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;
-sound = _this select 0;
-dog1 = _this select 1;
-_volume = _this select 2;
-_soundToPlay = _soundPath + "sounds\" + _sound + ".ogg";
-
-publicvariable "sound";
-publicvariable "dog1";
-[{dog1 say3d sound},"bis_fnc_spawn",true] spawn bis_fnc_mp;
-//_null = [[_sountToPlay,_dog],"sound_fnc",true,true] spawn BIS_fnc_MP;
-
-
-//_sound = ["hey",_unit getvariable "dog"] call _playSound;
 
 };
 

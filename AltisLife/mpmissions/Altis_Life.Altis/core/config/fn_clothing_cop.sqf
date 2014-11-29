@@ -19,7 +19,7 @@ switch (_filter) do
 	//Uniforms///////////////////////////////////////////////////////////////
 	case 0:
 	{
-		_ret pushBack ["U_Rangemaster","Cop Uniform",25]; // da anzug fia de, de no grea hinta de ohrn san
+		_ret pushBack ["U_BG_Guerilla2_1","Cop Uniform",25]; // da anzug fia de, de no grea hinta de ohrn san
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret pushBack ["U_B_CombatUniform_mcam_tshirt","Kommissar",350]; //Kommissar

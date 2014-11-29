@@ -43,9 +43,9 @@ player setVariable["coplevel",(__GETC__(life_coplevel)),true];
 {
     while {true} do
     {
-        waitUntil {uniform player == "U_Rangemaster"};
-        player setObjectTextureGlobal [0,"textures\uniform\cop\cop2.paa"]; //Rekrut
-        waitUntil {uniform player != "U_Rangemaster"};
+        waitUntil {uniform player == "U_BG_Guerilla2_1"};
+        player setObjectTextureGlobal [0,"textures\uniform\cop\cop6_co.paa"]; //Rekrut neue uniform
+        waitUntil {uniform player != "U_BG_Guerilla2_1"};
     };
 };
 [] spawn 
@@ -81,7 +81,7 @@ player setVariable["coplevel",(__GETC__(life_coplevel)),true];
     {
         waitUntil {uniform player == "U_B_CombatUniform_mcam_vest"};
         player setObjectTextureGlobal [0,"textures\uniform\cop\cop5.paa"]; // 2014 Variante
-        waitUntil {uniform player != "U_B_CombatUniform_mcam_tshirt"};
+        waitUntil {uniform player != "U_B_CombatUniform_mcam_vest"};
     };
 }; 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////

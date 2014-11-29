@@ -75,6 +75,15 @@ player setVariable["coplevel",(__GETC__(life_coplevel)),true];
         waitUntil {uniform player != "U_B_CombatUniform_mcam_tshirt"};
     };
 }; 
+[] spawn 
+{
+    while {true} do
+    {
+        waitUntil {uniform player == "U_B_CombatUniform_mcam_vest"};
+        player setObjectTextureGlobal [0,"textures\uniform\cop\cop5.paa"]; // 2014 Variante
+        waitUntil {uniform player != "U_B_CombatUniform_mcam_tshirt"};
+    };
+}; 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.

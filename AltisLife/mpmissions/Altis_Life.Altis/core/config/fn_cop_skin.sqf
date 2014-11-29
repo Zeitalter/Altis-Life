@@ -6,7 +6,7 @@ if (_unit == player) then
 	{
 		switch(true) do
 		{
-			case (__GETC__(life_coplevel) == 1) : {player setObjectTextureGlobal [0, "textures\uniform\cop\cop2.paa"]; };
+			case (__GETC__(life_coplevel) == 1) : {player setObjectTextureGlobal [0, "textures\uniform\cop\cop6_co.paa"]; };
 
             case (__GETC__(life_coplevel) == 2) : {player setObjectTextureGlobal [0, "textures\uniform\cop\cop5.paa"]; };
 

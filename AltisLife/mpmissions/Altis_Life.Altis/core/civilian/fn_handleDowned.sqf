@@ -16,7 +16,7 @@ if(_shooter isKindOf "Man" && alive player) then
 		life_isdowned = true;
 		if(currentweapon _shooter in ["hgun_Pistol_heavy_02_F"]) then
 		{ 
-		player setDamage 0.5;
+		player setDamage ((damage player) + 0.34);
 		};
 		
 		_curWep = currentWeapon player;
@@ -50,16 +50,16 @@ if(_shooter isKindOf "Man" && alive player) then
 		// Check Restrain every 15 seconds for "disableUserInput"
 		// I´m sure, it can be done better. Haven´t find a better way until now.
 		if(!(player getVariable "restrained")) then {
-			sleep 15;
+			sleep 5;
 		};
 		if(!(player getVariable "restrained")) then {
-			sleep 15;
+			sleep 10;
 		};
 		if(!(player getVariable "restrained")) then {
-			sleep 15;
+			sleep 10;
 		};
 		if(!(player getVariable "restrained")) then {
-			sleep 15;
+			sleep 10;
 		};
 		if (!(player getVariable "restrained")) then {
 			[[player,"amovppnemstpsraswrfldnon"],"life_fnc_animSync",true,false] spawn life_fnc_MP;

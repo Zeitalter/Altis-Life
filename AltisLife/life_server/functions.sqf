@@ -258,7 +258,7 @@ compileFinal "
 		{
 			private[""_message""];
 			_message = format[""SMS VON %1: %2"",_from,_msg];
-			hint parseText format [""<img shadow='false' image='bilder\telefon\connmessage_co.paa' size='6.5'/><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Dich</t><br/><t color='#00adef'>Von: </t><t color='#ffffff'>%1</t><br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%2</t><t/>"",_from,_msg]
+			hint parseText format [""<img shadow='false' image='bilder\telefon\connmessage_co.paa' size='6.5'/><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Dich</t><br/><t color='#00adef'>Von: </t><t color='#ffffff'>%1</t><br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%2</t><t/>"",_from,_msg];
 			
 			[""TextMessage"",[format[""Du hast eine SMS erhalten von %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;

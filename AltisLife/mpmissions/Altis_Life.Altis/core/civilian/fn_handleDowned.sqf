@@ -4,7 +4,9 @@
 	
 	Description: Downed state for rubber bullets
 */
-private["_unit","_shooter","_curWep","_curMags","_attach"];
+private["_source","_projectile","_unit","_shooter","_curWep","_curMags","_attach"];
+_source = _this select 1;
+_projectile = _this select 2;
 _unit = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _shooter = [_this,1,Objnull,[Objnull]] call BIS_fnc_param;
 if(isNull _unit OR isNull _shooter) exitWith {player allowDamage true; life_isdowned = false;};
@@ -14,8 +16,10 @@ if(_shooter isKindOf "Man" && alive player) then
 	if(!life_isdowned) then
 	{
 		life_isdowned = true;
-		//player setDamage 0.5;
-		
+		_curMag = currentMagazine _source;
+		if (_curMag in ["6Rnd_45ACP_Cylinder"] && _projectile in ["B_45ACP_Ball"]) then {
+		player setDamage 0.34;
+		};
 		_curWep = currentWeapon player;
 		_curMags = magazines player;
 		_attach = if(primaryWeapon player != "") then {primaryWeaponItems _unit} else {[]};

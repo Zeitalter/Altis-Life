@@ -195,7 +195,6 @@ class Life_Client_Core
 		class handleInv {};
 		class hudSetup {};
 		class hudUpdate {};
-		class tazeSound {};
 		class animSync {};
 		class simDisable {};
 		class keyHandler {};
@@ -254,7 +253,6 @@ class Life_Client_Core
 		file = "core\civilian";
 		class jailMe {};
 		class jail {};
-		class tazed {};
 		class knockedOut {};
 		class knockoutAction {};
 		class robReceive {};

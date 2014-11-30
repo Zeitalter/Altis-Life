@@ -77,7 +77,7 @@ switch(_shop) do
 						["arifle_MXC_F","MXC (Meister-Anwaerter)",25000],
 						["30Rnd_65x39_caseless_mag",nil,200],
 						["hgun_Pistol_heavy_01_snds_F","Gasdruck Pistole",7500],
-						["11Rnd_45ACP_Mag","10g NBR Geschoss",50],
+						["11Rnd_45ACP_Mag","10g NBR Geschosse",50],
 						["muzzle_snds_L",nil,650],
 						["HandGrenade_Stone","Flashbang",1700],
 						["MineDetector",nil,1000],
@@ -114,7 +114,7 @@ switch(_shop) do
 				["Wachtmeister Ausrüstungs Shop",
 					[
 						["hgun_Pistol_heavy_01_snds_F","Gasdruck Pistole",7500],
-						["11Rnd_45ACP_Mag","10g NBR Geschoss",50], //optic_MRD
+						["11Rnd_45ACP_Mag","10g NBR Geschosse",50], //optic_MRD
 						["optic_MRD","GdP-Zielvorrichtung",50],
 						["arifle_MXC_F",nil,25000],
 						["30Rnd_65x39_caseless_mag",nil,200], // SMG_02_F  arifle_MX_GL_Black_F 
@@ -160,9 +160,9 @@ switch(_shop) do
 				["Kommissar Ausrüstungs Shop",
 					[
 						["hgun_Pistol_heavy_01_snds_F","Gasdruck Pistole",7500],
-						["11Rnd_45ACP_Mag","10g NBR Geschoss",50], //optic_MRD
+						["11Rnd_45ACP_Mag","10g NBR Geschosse",50], //optic_MRD
 						["optic_MRD","GdP-Zielvorrichtung",50],
-						["hgun_Pistol_heavy_02_F","Treibsatz NBR",17500],
+						["hgun_Pistol_heavy_02_F","NBR Pistole",17500],
 						["6Rnd_45ACP_Cylinder","20g NBR Geschoss",200],
 						["arifle_MXC_F",nil,30000],
 						["30Rnd_65x39_caseless_mag",nil,100],
@@ -197,7 +197,6 @@ switch(_shop) do
 						["muzzle_snds_L",nil,650],
 						["HandGrenade_Stone","M 7290 Blendgranate",1700],
 						["SmokeShellGreen","FOX CS-Gas",1700], //SmokeShellGreen					
-						["Rangefinder",nil,150],
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
@@ -221,10 +220,10 @@ switch(_shop) do
 				["Hauptkommissar Ausrüstungs Shop",
 					[
 						["hgun_Pistol_heavy_01_snds_F","Gasdruck Pistole",7500],
-						["11Rnd_45ACP_Mag","10g PCE Geschoss",50], //optic_MRD
+						["11Rnd_45ACP_Mag","10g NBR Geschosse",50], //optic_MRD
 						["optic_MRD","GdP-Zielvorrichtung",50],
-						["hgun_Pistol_heavy_02_F","Treibsatz PCE",17500],
-						["6Rnd_45ACP_Cylinder","20g PCE Geschoss",200],
+						["hgun_Pistol_heavy_02_F","NBR Pistole",17500],
+						["6Rnd_45ACP_Cylinder","20g TreibGeschosse",200],
 						["arifle_MXC_F",nil,30000],
 						["30Rnd_65x39_caseless_mag",nil,100],
 						["arifle_MX_F",nil,35000],

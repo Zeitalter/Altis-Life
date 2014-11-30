@@ -270,7 +270,7 @@ compileFinal "
 			private[""_message"",""_nr""];
 			_message = format[""EINGEHENDER AUFTRAG VON %1: %2"",_from,_msg];
 			_nr = round(random 99999);
-			hint parseText format [""<t align='center'><t color='#0099FF'><t size='1.7'>Eingehender Auftrag</t></t><br/><img size='4' color='#FFFFFF' shadow='false' image='textures\marke.paa'/><br/><t color='#316dff'><t color='#FFFFFF'>Auftragsnr. 15ds1</t></t><br/><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Alle Einheiten</t><br/><t color='#00adef'>Von: </t><t color='#ffffff'>%1</t><br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%2</t>"",_from,_msg,_nr];
+			hint parseText format [""<t align='center'><t color='#0099FF'><t size='1.7'>Eingehender Auftrag</t></t><br/><img size='4' color='#FFFFFF' shadow='false' image='textures\marke.paa'/><br/><t color='#316dff'><t color='#FFFFFF'>Auftragsnr. AZ%3</t></t><br/><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Alle Einheiten</t><br/><t color='#00adef'>Von: </t><t color='#ffffff'>%1</t><br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%2</t>"",_from,_msg,_nr];
 			
 			[""PoliceDispatch"",[format[""Eingehender Auftrag von %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
@@ -292,7 +292,7 @@ compileFinal "
 			private[""_message""];
 			_message = format[""ADMIN NACHRICHT: %1"",_msg];
 			_admin = format[""Gesendet von einem Admin: %1"", _from];
-			hint parseText format [""<img shadow='false' image='bilder\telefon\zeitalter_co.paa' color='#FF0000'  size='3.4'/><br/><t color='#FF0000'><t align='center'><t size='1.7'>ADMIN NACHRICHT</t></t></t><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Dich</t><br/><t color='#00adef'>Von: <t color='#ffffff'>Zeitalter Admin-Team<br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%1<t/>"",_msg];  
+			hint parseText format [""<img shadow='false' image='bilder\telefon\zeitalter_co.paa' size='3.4'/><br/><t color='#FF0000'><t align='center'><t size='1.7'>ADMIN NACHRICHT</t></t></t><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Dich</t><br/><t color='#00adef'>Von: <t color='#ffffff'>Zeitalter Admin-Team<br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%1<t/>"",_msg];  
 			
 			[""AdminMessage"",[""Du hast eine Admin Nachricht erhalten!""]] call bis_fnc_showNotification;
 			systemChat _message;

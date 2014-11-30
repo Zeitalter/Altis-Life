@@ -16,7 +16,7 @@ if(_shooter isKindOf "Man" && alive player) then
 		life_isdowned = true;
 		if(currentweapon _shooter in ["hgun_Pistol_heavy_02_F"]) then
 		{ 
-		player setDamage ((damage player) + 0.34);
+		player setDamage ((damage player) + 0.87);
 		};
 		
 		_curWep = currentWeapon player;

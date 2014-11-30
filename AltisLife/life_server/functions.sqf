@@ -258,7 +258,7 @@ compileFinal "
 		{
 			private[""_message""];
 			_message = format[""SMS VON %1: %2"",_from,_msg];
-			hint parseText format [""<img shadow='false' image='bilder\telefon\connmessage_co.paa' size='6.5'/><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Dich</t><br/><t color='#00adef'>Von: </t><t color='#ffffff'>%1</t><br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%2</t><t/>"",_from,_msg]
+			hint parseText format [""<img shadow='false' image='bilder\telefon\connmessage_co.paa' size='6.5'/><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Dich</t><br/><t color='#00adef'>Von: </t><t color='#ffffff'>%1</t><br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%2</t><t/>"",_from,_msg];
 			
 			[""TextMessage"",[format[""Du hast eine SMS erhalten von %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
@@ -267,9 +267,10 @@ compileFinal "
 		case 1 :
 		{
 			if(side player != west) exitWith {};
-			private[""_message""];
+			private[""_message"",""_nr""];
 			_message = format[""EINGEHENDER AUFTRAG VON %1: %2"",_from,_msg];
-			hint parseText format [""<t align='center'><t color='#0099FF'><t size='1.7'>Eingehender Auftrag</t></t><br/><img size='4' color='#FFFFFF' shadow='false' image='textures\marke.paa'/><br/><t color='#316dff'><t color='#FFFFFF'>Auftragsnr. 15ds1</t></t><br/><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Alle Einheiten</t><br/><t color='#00adef'>Von: </t><t color='#ffffff'>%1</t><br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%2</t>"",_from,_msg,round(random 99999)];
+			_nr = round(random 99999);
+			hint parseText format [""<t align='center'><t color='#0099FF'><t size='1.7'>Eingehender Auftrag</t></t><br/><img size='4' color='#FFFFFF' shadow='false' image='textures\marke.paa'/><br/><t color='#316dff'><t color='#FFFFFF'>Auftragsnr. 15ds1</t></t><br/><br/><br/><t align='left'><t color='#00adef'>An: </t><t color='#ffffff'>Alle Einheiten</t><br/><t color='#00adef'>Von: </t><t color='#ffffff'>%1</t><br/><br/><t color='#00adef'>Nachricht:</t><br/><t color='#ffffff'>%2</t>"",_from,_msg,_nr];
 			
 			[""PoliceDispatch"",[format[""Eingehender Auftrag von %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;

@@ -322,7 +322,7 @@ switch(_shop) do
 						["optic_SOS",nil,5000],
 						["optic_LRPS",nil,5000],
 						["optic_NVS",nil,5000], //optic_MRCO
-						["optic_Nightstalker",nil,9000],
+						//["optic_Nightstalker",nil,9000],
 						["1Rnd_Smoke_Grenade_shell",nil,5000],
 						["1Rnd_SmokePurple_Grenade_shell",nil,6000],
 						["1Rnd_SmokeBlue_Grenade_shell",nil,6000],
@@ -390,7 +390,7 @@ switch(_shop) do
 						["optic_SOS",nil,20000],
 						["optic_LRPS",nil,30000],
 						["optic_NVS",nil,50000],
-						["optic_tws_mg","Thermalvisier",75000], //  optic_tws_mg 
+						//["optic_tws_mg","Thermalvisier",75000], //  optic_tws_mg 
 						["acc_flashlight",nil,1000],
 						["1Rnd_Smoke_Grenade_shell",nil,5000],
 						["1Rnd_SmokePurple_Grenade_shell",nil,6000],

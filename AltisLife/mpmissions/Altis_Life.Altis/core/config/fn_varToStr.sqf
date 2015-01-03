@@ -102,4 +102,5 @@ switch (_var) do
 	case "license_civ_bitcoin": {"Bitcoins scannen"};
 	case "license_civ_taxi": {"Taxi"};
 	case "license_civ_adac": {"adac"};
+	case "license_civ_schwarzm": {"Schwarze Mitgliedschaft"};
 };

@@ -39,4 +39,5 @@ switch (_type) do
 	case "meth": {30000};
 	case "bitcoin": {30000};
 	case "adac": {100};
+	case "schwarzm": {6500000};
 };

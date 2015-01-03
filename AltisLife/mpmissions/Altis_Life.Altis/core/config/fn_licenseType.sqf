@@ -46,6 +46,7 @@ switch (_mode) do
 			case "bitcoin": {_var = "license_civ_bitcoin"};
 			case "taxi": {_var = "license_civ_taxi"};
 			case "adac": {_var = "license_civ_adac"};
+			case "schwarzm": {_var = "license_civ_schwarzm"}; 
 			default {_var = ""};
 		};
 	};
@@ -84,6 +85,7 @@ switch (_mode) do
 			case "license_civ_bitcoin": {_var = "bitcoin"};
 			case "license_civ_taxi": {_var = "taxi"};
 			case "license_civ_adac": {_var = "adac"};
+			case "license_civ_schwarzm": {_var = "schwarzm"};
 			default {_var = ""};
 		};
 	};

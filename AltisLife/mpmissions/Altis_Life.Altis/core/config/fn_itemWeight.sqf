@@ -3,7 +3,7 @@
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
-	Gets the items weight and returns it.
+	Gets the items weight and returns it. //verarbeitet auf 3 // unverarbeitet auf 4
 */
 private["_item"];
 _item = [_this,0,"",[""]] call BIS_fnc_param;
@@ -11,10 +11,10 @@ if(_item == "") exitWith {};
 
 switch (_item) do
 {
-	case "oilu": {7};
-	case "oilp": {6};
-	case "heroinu": {6};
-	case "heroinp": {4};
+	case "oilu": {4};
+	case "oilp": {3};
+	case "heroinu": {4};
+	case "heroinp": {3};
 	case "cannabis": {4};
 	case "marijuana": {3};
 	case "apple": {1};
@@ -36,17 +36,17 @@ switch (_item) do
 	case "money": {0};
 	case "pickaxe": {2};
 	case "copperore": {4};
-	case "ironore": {5};
+	case "ironore": {4};
 	case "copper_r": {3};
 	case "iron_r": {3};
 	case "sand": {3};
-	case "salt": {3};
-	case "salt_r": {1};
+	case "salt": {4};
+	case "salt_r": {3};
 	case "glass": {1};
 	case "diamond": {4};
-	case "diamondc": {2};
-	case "cocaine": {6};
-	case "cocainep": {4};
+	case "diamondc": {3};
+	case "cocaine": {4};
+	case "cocainep": {3};
 	case "spikeStrip": {15};
 	case "rock": {6};
 	case "cement": {5};
@@ -59,10 +59,10 @@ switch (_item) do
 	case "mauer": {10};
 	case "pressluft": {10};
 	case "gpstracker": {2};
-	case "methu": {6};
-    	case "methp": {4};
-    	case "bitcoinu": {6};
-    	case "bitcoinp": {4};
+	case "methu": {4};
+    	case "methp": {3};
+    	case "bitcoinu": {4};
+    	case "bitcoinp": {3};
     	case "bottledwhiskey": {5};
 	case "bottledbeer": {5};
 	case "tentciv": {15};

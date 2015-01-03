@@ -132,10 +132,14 @@ player createDiaryRecord["forum",
 				Waffen gelten als illegal, wenn: <br/>
 					- sie im Rebellenshop gekauft werden oder dort gelistet sind. <br/>
 					- Rebellen die der Polizei vorbehaltenen Waffen tragen (MX-Reihe, Taser). <br/>
+					- sfern diese nicht mit einer Waffenlizenz verbunden sind. Dazu zählen alle Waffen die am Schwarzmarkt oder im Rebellenposten gekauft werden können. Offen getragene Waffen werden von der Polizei konfisziert und die Träger werden bestraft. <br/>
 				Waffen gelten als legal, wenn: <br/>
 					- diese in einem Waffenladen (ausgenommen: Rebellenshops) gekauft wurden. <br/>
 					- diese in Verbindung mit einem Waffenschein getragen werden. <br/>
+				Waffengebrauchsregel: <br/>
+				 	-Der Alamut Raketenwerfer darf nur gegen gepanzerte Fahrzeuge (Stryder, Ifrit, Hunter, alle HMG´s) benutzt werden. Die Alamut darf nur vom Boden abgefeuert werden. <br/>
 				Fahrzeuge gelten als illegal, wenn: <br/>
+					-Wenn illegale Fahrzeuge von der Polizei sichergestellt werden, dürfen diese nach Ermessen der Polizei konfisziert oder zerstört werden. Illegale Fahrzeuge sind alle Fahrzeuge, die im Rebellenposten oder am Schwarzmarkt gekauft werden können. Weiterhin gelten alle Helikopter als illegal, wenn diese im Rebellenposten gekauft werden können. <br/>
 					- diese im Rebellenshop gekauft wurden oder in diesem gelistet sind (auch Helikopter). <br/><br/>
 				"
 		]

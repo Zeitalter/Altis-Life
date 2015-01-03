@@ -65,6 +65,7 @@ switch (_code) do
 		{
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
+			case civilian: {if(!visibleMap) then {[] spawn life_fnc_gangMarkers;}};
 		};
 	};
 	
@@ -122,18 +123,23 @@ switch (_code) do
 			};
 	}; 
 	
-	//Knock out, this is experimental and yeah...
-	case 34:
-	{
-		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
-		{
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
-			{
-				[cursorTarget] spawn life_fnc_knockoutAction;
-			};
-		};
-	};
+//Knock out, this is experimental and yeah...
+case 34:
+{
+  if(_shift) then {_handled = true;};
+  if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
+  {
+   if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
+   {
+    [cursorTarget] spawn life_fnc_knockoutAction;
+    if("ItemRadio" in assignedItems cursorTarget) then {
+      cursorTarget removeweapon "ItemRadio";
+      hint "Dass Handy liegt nun auf den Boden";
+      _defenceplace1 = "Item_ItemRadio" createVehicle (player modelToWorld[0,0,0]);}
+     else { hint "Die Person, welche du ausgenockt hast, hat nun kein Handy mehr!"};
+   };
+  };
+};
 
 	//T Key (Trunk)
 	case 20:
@@ -241,8 +247,8 @@ switch (_code) do
 		};
     };
 	
-	// Mobile ATM
-	case 67:
+	// Mobile ATM Pos 1 wegen InfiStar
+	case 199:
 	{
 		if (playerSide == west) then 
 		{
@@ -269,10 +275,13 @@ switch (_code) do
         }
     };
     
-    	case 199:
+    	case 207: //gebet
     {
-    [] execVM "scripts\AdminTool\atools\prio1\loop.sqf"; //ADMIN TOOL
-    };
+   if ((getPlayerUID player) in ["76561198031337441","76561197992914992","76561198035863318","76561198066223827","76561198128817311","76561198159700397","76561198118042556","76561198060948265"]) then
+		{
+				[[player, "gebet", 5], "BTK_fnc_wirecutterSay"] call BIS_fnc_MP;
+		};
+     };
 	
 	case 25: //P knopf zum schlÃ¼essel geben
      {

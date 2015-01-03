@@ -1,1 +1,0 @@
-[] execVM "scripts\AdminTool\atools\prio3\AdminToolMenu.sqf";

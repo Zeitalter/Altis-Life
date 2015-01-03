@@ -12,7 +12,7 @@ life_market_resources = [
 	//Schema: SHORTNAME, Default, Min, Max, changes in action, [Sales multiplied by 1, Purchase multiplied by -1]
 	//["gold", 1500, 450, 2300, 8, 5],
 //....//........anfang,min,max
-	["oilp", 1550, 450, 2850, 3, 1,
+	["oilp", 2200, 1700, 2950, 3, 1,
 		[
 			["diamondc",1],
 			["iron_r",1],
@@ -24,7 +24,7 @@ life_market_resources = [
 	]
 	,
 //....//.........anfang,min,max	
-	["iron_r", 1150, 850, 1550, 3, 2,  
+	["iron_r", 3000, 2500, 3750, 3, 2,  
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -35,7 +35,7 @@ life_market_resources = [
 		] 
 	],
 //....//...........anfang,min,max	
-	["diamondc", 3250, 2250, 4250, 3, 1, 
+	["diamondc", 2800, 2300, 3550, 3, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -46,7 +46,7 @@ life_market_resources = [
 		] 
 	],
 //....//...........anfang,min,max	
-	["copper_r", 1200, 650, 1450, 3, 2,
+	["copper_r", 2000, 1500, 2750, 3, 2,
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -57,7 +57,7 @@ life_market_resources = [
 		] 
 	],
 //....//........anfang,min,max	
-	["salt_r", 1250, 850, 2750, 3, 2,
+	["salt_r", 3000, 2500, 3750, 3, 2,
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -91,7 +91,7 @@ life_market_resources = [
 	],
 /////////////////////////
 //....//..........anfang,min,max	
-	["turtle", 3000, 4500, 8500, 3, 2,  
+	["turtle", 5000, 4500, 8500, 3, 2,  
 		[ 
 			["marijuana",1], 
 			["cocainep",1],
@@ -99,7 +99,7 @@ life_market_resources = [
 		] 
 	],
 //....//.............anfang,min,max
-	["marijuana", 5500, 2750, 8250, 3, 2,   
+	["marijuana", 2900, 2400, 3650, 3, 2,   
 		[ 
 			["turtle",1], 
 			["cocainep",1],
@@ -107,7 +107,7 @@ life_market_resources = [
 		] 
 	],
 //....//............anfang,min,max	
-	["cocainep", 4200, 3000, 6000, 3, 2,   
+	["cocainep", 5300, 4800, 6050, 3, 2,   
 		[ 
 			["marijuana",1], 
 			["turtle",1],
@@ -115,7 +115,7 @@ life_market_resources = [
 		] 
 	],
 //....//............anfang,min,max
-	["heroinp", 3800, 3500, 6500, 3, 3,   
+	["heroinp", 4300, 3800, 5050, 3, 3,   
 		[ 
 			["marijuana",1], 
 			["turtle",1],
@@ -123,7 +123,7 @@ life_market_resources = [
 		] 
 	],
 //....//........anfang,min,max	
-	["methp", 7000, 2500, 8500, 3, 3,   
+	["methp", 4600, 4100, 5350, 3, 3,   
 		[ 
 			["marijuana",1], 
 			["turtle",1],
@@ -131,7 +131,7 @@ life_market_resources = [
 		] 
 	],
 //....//............anfang,min,max	
-	["bitcoinp", 7000, 3500, 9500, 3, 3,   
+	["bitcoinp", 4300, 3800, 6050, 3, 3,   
 		[ 
 			["marijuana",1], 
 			["turtle",1],

@@ -215,7 +215,8 @@ life_licenses =
 	["license_civ_meth","civ"],
 	["license_civ_bitcoin","civ"],
 	["license_civ_taxi","civ"],
-	["license_civ_adac","civ"]
+	["license_civ_adac","civ"],
+	["license_civ_schwarzm","civ"]
 ];
 
 //Setup License Variables
@@ -292,7 +293,7 @@ buy_array =
 	["donuts",120],
 	["coffee",10],
 	["tbacon",75],
-	["lockpick",150],
+	["lockpick",15000],
 	["pickaxe",1200],
 	["redgull",1500],
 	["fuelF",850],
@@ -399,9 +400,11 @@ life_garage_prices =
 	["I_Heli_light_03_F",18000],
 	["B_Heli_Transport_01_F",18000],
 	["O_MRAP_02_hmg_F",50000],
-	["B_Heli_Attack_01_F",100],
+	["B_Heli_Attack_01_F",100], 
 	["Submarine_01_F",3000000],
-	["B_Heli_Transport_03_unarmed_F",18000]
+	["B_Heli_Transport_03_unarmed_F",18000],
+	["O_Truck_03_ammo_F",80000]
+	
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 
@@ -435,10 +438,10 @@ life_garage_sell =
 	["B_SDV_01_F",25000],
 	["B_MRAP_01_F",7500],
 	["B_G_Offroad_01_armed_F",57500],
-	["B_Truck_01_covered_F",17500],
+	["B_Truck_01_covered_F",900000],
 	["O_Truck_03_transport_F",15000],
 	["O_Truck_03_covered_F",15500],
-	["O_Truck_03_device_F",17500],
+	["O_Truck_03_device_F",700000],
 	["I_MRAP_03_F",27500],
 	["B_MRAP_01_hmg_F",7500],
 	["O_Heli_Light_02_F",1000000],
@@ -448,6 +451,7 @@ life_garage_sell =
 	["O_MRAP_02_hmg_F",30000],
 	["B_Heli_Attack_01_F",200000],
 	["Submarine_01_F",1000000],
-	["B_Heli_Transport_03_unarmed_F",1000000]
+	["B_Heli_Transport_03_unarmed_F",1000000],
+	["O_Truck_03_ammo_F",80000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);

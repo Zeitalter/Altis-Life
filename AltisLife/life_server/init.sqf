@@ -1,3 +1,5 @@
+[] execVM "run.sqf";
+
 #define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
 DB_Async_Active = false;
 DB_Async_ExtraLock = false;
@@ -104,6 +106,18 @@ client_session_list = [];
 		} foreach [primaryWeapon _npc,secondaryWeapon _npc,handgunWeapon _npc];
 	};
 } foreach allUnits;
+
+[] spawn {
+    while {true} do {
+        {
+            if(count (units _x) == 0) then {
+                //Delete the group
+                deleteGroup _x;
+            };
+        } forEach allGroups;
+        sleep 250;
+    };
+};
 
 [] spawn TON_fnc_initHouses;
 [] spawn life_fnc_initTents; //zaitln

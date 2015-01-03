@@ -14,6 +14,8 @@ player addItem "NVGoggles";
 player addItem "ToolKit";
 player addItem "ToolKit";
 player addItem "FirstAidKit";
+player addItem "ItemRadio";  
+player assignItem "ItemRadio";  
 removeGoggles player;
 removeHeadGear player;
 if(hmd player != "") then {

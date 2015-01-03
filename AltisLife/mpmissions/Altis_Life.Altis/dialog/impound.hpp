@@ -136,5 +136,24 @@ class Life_impound_menu
 			w = 0.6;
 			h = (1 / 15);
 		};
+		
+		class Insure : life_RscButtonMenu 
+		{
+			idc = -1;
+			text = "Versichere dein Fahrzeug jetzt bei AVG!";
+			colorBackground[] = {0,0.2235294117647059,0.3725490196078431,1};
+			onButtonClick = "[] spawn life_fnc_insurance;";
+			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.95 - (1 / 25);
+			w = (13 / 40);
+			h = (1 / 25);
+		};
 	};
 };
+
+
+
+
+
+
+

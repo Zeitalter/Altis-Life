@@ -17,6 +17,10 @@ switch (playerSide) do
 	      	//Kidnapping
 		life_actions = [player addAction["<t color='#00FF00'>Fesseln</t>",life_fnc_restrainAction,cursorTarget,9999999,false,false,"",'
 		!isNull cursorTarget && player distance cursorTarget < 5 && isPlayer cursorTarget && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1 ']];
+	///////////ohrenschtz
+		/////ohrenschutz
+	life_actions = [player addAction["<t color='#ADFF2F'>Ohrenschutz</t>",{if (soundVolume != 1) then {1 fadeSound 1;} else {1 fadeSound 0.4;};},"",-6,false,false,"",'vehicle player != player || soundVolume != 1']];
+	
 	};
       case west:
       {
@@ -26,7 +30,8 @@ switch (playerSide) do
 	life_actions = life_actions + [player addAction["<t color='#FF0000'>Absperrung aufheben</t>",life_fnc_packupmauer,"",0,false,false,"",' _mauer = nearestObjects[getPos player,["Land_Concrete_SmallWall_4m_F"],8] select 0; !isNil "_mauer" && !isNil {(_mauer getVariable "item")}']];
 	////des ding a wida afhem
 	life_actions = life_actions + [player addAction["<t color='#FF0000'>Absperrung aufheben</t>",life_fnc_packupmauer,"",0,false,false,"",' _mauer = nearestObjects[getPos player,["RoadBarrier_F"],8] select 0; !isNil "_mauer" && !isNil {(_mauer getVariable "item")}']];
-	/////leid vom himme hoin mid emp
+	/////ohrenschutz
+	life_actions = [player addAction["<t color='#ADFF2F'>Ohrenschutz</t>",{if (soundVolume != 1) then {1 fadeSound 1;} else {1 fadeSound 0.4;};},"",-6,false,false,"",'vehicle player != player || soundVolume != 1']];
 	// nano EMP Little Bird
 	life_actions = life_actions + [player addAction["<t color='#FF0000'>EMP Operator Konsole öffnen</t>",life_fnc_openEmpMenu,[],8,false,false,"",'[_this] call life_fnc_isEmpOperator']];
 	};      

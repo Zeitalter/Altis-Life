@@ -333,7 +333,7 @@ class playerSettings {
 		class ButtonCell: Life_RscButtonMenu
 		{
 			idc = 2014; //102irgendwas
-			onButtonClick = "createDialog ""Life_cell_phone"";";
+			onButtonClick = "[] call life_fnc_cellphone2;";
 
 			text = "$STR_PM_CellPhone"; //--- ToDo: Localize;
 			x = 0.0875;

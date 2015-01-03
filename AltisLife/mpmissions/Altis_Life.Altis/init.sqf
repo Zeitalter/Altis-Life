@@ -34,9 +34,11 @@ if (isDedicated) then {
 	};
 //Scriptsausführungsbefehle
 ////////////////////ADMIN///////////////////////
+/*
 [] execVM "scripts\anticheat.sqf"; //Admintool
 [] execVM "scripts\AdminTool\atools\prio2\loop.sqf"; //com betreuer slayer 
 [] execVM "scripts\AdminTool\atools\prio3\loop.sqf"; //quester ripper 
+*/
 //////////////////////////////////////////////////
 [] execVM "scripts\zlt_fastrope.sqf"; //Abseilscript
 [] execVM "scripts\monitor.sqf"; //des is de anzeige do rechts untn

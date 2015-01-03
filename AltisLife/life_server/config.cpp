@@ -111,6 +111,9 @@ class CfgFunctions
 			class chopShopSell {};
 			class clientDisconnect {};
 			class cleanupRequest {};
+			class vehicleInsurance {};
+			class robShops {}; 
+ 			class shopState {};
 		};
 		
 		class GHBSystem

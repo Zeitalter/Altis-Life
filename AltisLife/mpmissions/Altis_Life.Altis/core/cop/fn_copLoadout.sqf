@@ -34,7 +34,10 @@ player addItem "ItemWatch";
 player assignItem "ItemWatch";
 player addItem "ItemGPS";
 player assignItem "ItemGPS";
+player addItem "ItemRadio";  
+player assignItem "ItemRadio";  
 player addweapon "NVGoggles";
+player assignItem "NVGoggles";  
 
 [[player,0,"textures\uniform\cop\cop6_co.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 

@@ -16,18 +16,11 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Rot";};
-			case 1: {_color = "Gelb";};
-			case 2: {_color = "Weiss";};
-			case 3: {_color = "Blau";};
-			case 4: {_color = "DunkelRot";};
-			case 5: {_color = "Blau / Weiss"};
-			case 6: {_color = "Badmobil"};
-			case 7: {_color = "Rockstar Lila"};
-			case 8: {_color = "Ganja"};
-			case 9: {_color = "Unicorn"};
-			case 10: {_color = "Ambulanz"};
-			case 11: {_color = "Polizei"};
+			case 0: {_color = "Badmobil"};
+			case 1: {_color = "Rockstar Lila"};
+			case 2: {_color = "Ganja"};
+			case 3: {_color = "Ambulanz"};
+			case 4: {_color = "Polizei"};
 		};
 	};
 	
@@ -43,17 +36,8 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Beige";};
-			case 1: {_color = "Gruen";};
-			case 2: {_color = "Blau";};
-			case 3: {_color = "DunkelBlau";};
-			case 4: {_color = "Gelb";};
-			case 5: {_color = "Weiss"};
-			case 6: {_color = "Grau"};
-			case 7: {_color = "Schwarz"};
-			case 8: {_color = "Badmobil"};
-			case 9: {_color = "Unicorn"};
-			case 10: {_color = "Polizei"};
+			case 0: {_color = "Badmobil"};
+			case 1: {_color = "Polizei"};
 		};
 	};
 	
@@ -61,17 +45,11 @@ switch (_vehicle) do
 	{
 		switch(_index) do
 		{
-			case 0: {_color = "Rot"};
-			case 1: {_color = "DunkelBlau"};
-			case 2: {_color = "Orange"};
-			case 3: {_color = "Schwarz-Weiss"};
-			case 4: {_color = "Tan"};
-			case 5: {_color = "Gruen"};
-			case 6: {_color = "RedGull"};
-			case 7: {_color = "Drache"};
-			case 8: {_color = "Unicorn"};
-			case 9: {_color = "Polizei"};
-			case 10: {_color = "Grenzgaenger"};
+			case 0: {_color = "Gruen"};
+			case 1: {_color = "RedGull"};
+			case 2: {_color = "Drache"};
+			case 3: {_color = "Polizei"};
+			case 4: {_color = "Grenzgaenger"};
 		};
 	};
 	
@@ -80,18 +58,14 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "ADAC";};
-			case 1: {_color = "DunkelRot";};
-			case 2: {_color = "Schwarz";};
-			case 3: {_color = "Silber";};
-			case 4: {_color = "Orange";};
-			case 5: {_color = "Ghostrider";};
-			case 6: {_color = "Monster Energy";};
-			case 7: {_color = "Gruenes Tribal";};
-			case 8: {_color = "Nyan";};
-			case 9: {_color = "B M W X6";};
-			case 10: {_color = "Ambulanz";};
-			case 11: {_color = "Polizei"};
-			case 12: {_color = "SEK"};
+			case 1: {_color = "Ghostrider";};
+			case 2: {_color = "Monster Energy";};
+			case 3: {_color = "Gruenes Tribal";};
+			case 4: {_color = "Nyan";};
+			case 5: {_color = "B M W X6";};
+			case 6: {_color = "Ambulanz";};
+			case 7: {_color = "Polizei"};
+			case 8: {_color = "SEK"};
 		};
 	};
 
@@ -154,6 +128,14 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "B_MRAP_01_hmg_F":   
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Polizei"};
+		};
+	};
+	
 	case "O_MRAP_02_F":   
 	{
 		switch (_index) do
@@ -171,6 +153,7 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "Polizei"};
+			case 1: {_color = "Tarn"};
 		};
 	};
 		

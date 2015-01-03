@@ -28,12 +28,15 @@ _nr = round(random 999999);
 
 switch ( _coplevel ) do
 {
-	case 1: { _rang = "Rang 1 - Recruit"; };
-	case 2: { _rang = "Rang 2 - Officer"; };
-	case 3: { _rang = "Rang 3 - Detective"; };
-	case 4: { _rang = "Rang 4 - Lieutenant"; };
-	case 5: { _rang = "Rang 5 - Major"; };
-	case 6: { _rang = "Rang 6 - Chief"; };
+	case 1: { _rang = "Rang 1 - Rekrut"; };
+	case 2: { _rang = "Rang 2 - Wachtmeister"; };
+	case 3: { _rang = "Rang 3 - Kommissar"; };
+	case 4: { _rang = "Rang 4 - Oberkommissar"; };
+	case 5: { _rang = "Rang 5 - Hauptkommissar"; };
+	case 6: { _rang = "Rang 6 - Polizeirat"; };
+	case 7: { _rang = "Rang 6 - Polizeioberrat"; };
+	case 8: { _rang = "Rang 6 - Polizeidirektor"; };
+	case 9: { _rang = "Rang 6 - Polizeipräsident"; };
 	default {_rank =  "Error";};
 };
 

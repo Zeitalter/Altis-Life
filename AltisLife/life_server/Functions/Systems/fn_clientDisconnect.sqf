@@ -19,3 +19,10 @@ _name = _this select 2;
 } foreach allDeadMen;
 
 _uid spawn TON_fnc_houseCleanup;
+
+//Pfiade spectaror bug 
+{
+    if(count units _x == 0) then {
+    deleteGroup _x;
+    };
+} forEach allGroups;

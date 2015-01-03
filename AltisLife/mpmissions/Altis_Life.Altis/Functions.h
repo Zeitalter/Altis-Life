@@ -113,6 +113,10 @@ class Life_Client_Core
 	      class handhoch {};
 	      class warn {};
 	      class warned {};
+	      class robATM {};
+	      class robShops {};
+     		class robShops2 {};
+     		class shopState {};
 	};
 	
 	class Housing
@@ -185,6 +189,7 @@ class Life_Client_Core
 		class settingsInit {};
 		class wantedadd2 {};
 		class wanted2 {};
+		class cellphone2 {};
 	};
 	
 	class Functions
@@ -231,6 +236,7 @@ class Life_Client_Core
 		class autoSave {};
 		class Opener {};
 		class randomRound {};
+		class insurance {};
 	};
 	
 	class Network
@@ -332,6 +338,7 @@ class Life_Client_Core
 		class gangInvite {};
 		class gangDisband {};
 		class gangDisbanded {};
+		class gangMarkers {};
 	};
 	
 	class Shops

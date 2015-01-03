@@ -26,6 +26,7 @@ corpseRemovalMinTime = 999;
 corpseRemovalMaxTime = 9999;
 
 #include "dialog\MasterHandler.h"
+#include "infiSTAR_AdminMenu.hpp"
 
 class RscTitles
 {
@@ -198,6 +199,13 @@ class CfgSounds
 	{
 		name = "dog_one";
 		sound[] = {"sounds\dog_one.ogg", 1, 1};
+		titles[] = {};
+	};
+	
+	class gebet
+	{
+		name = "gebet";
+		sound[] = {"\sounds\gebet.ogg", 1.0, 1};
 		titles[] = {};
 	};
 };

@@ -25,15 +25,15 @@ if(!(str(player) in ["cop_1","cop_2","cop_3","cop_4"])) then {
 // für jedn hanswuaschtn an andan paycheck///////
 switch (__GETC__(life_coplevel)) do 
 			{
-	             case 1: {life_paycheck = life_paycheck + 2000;}; // Rank 1
-	             case 2: {life_paycheck = life_paycheck + 5500;}; // Rank 2
-	             case 3: {life_paycheck = life_paycheck + 10500;}; // Rank 3
-	             case 4: {life_paycheck = life_paycheck + 13500;}; // Rank 4
-	             case 5: {life_paycheck = life_paycheck + 180000;}; // Rank 5 
-	             case 6: {life_paycheck = life_paycheck + 300000;}; // Rank 6
-	             case 7: {life_paycheck = life_paycheck + 9080;}; // Rank 7
-	             case 8: {life_paycheck = life_paycheck + 15080;}; // Rank 7500
-	             case 9: {life_paycheck = life_paycheck + 309080;}; // Rank 7500
+	             case 1: {life_paycheck = life_paycheck + 2900;}; // Rank 1
+	             case 2: {life_paycheck = life_paycheck + 5900;}; // Rank 2
+	             case 3: {life_paycheck = life_paycheck + 11900;}; // Rank 3
+	             case 4: {life_paycheck = life_paycheck + 23900;}; // Rank 4
+	             case 5: {life_paycheck = life_paycheck + 47900;}; // Rank 5 
+	             case 6: {life_paycheck = life_paycheck + 95900;}; // Rank 6
+	             case 7: {life_paycheck = life_paycheck + 191900;}; // Rank 7
+	             case 8: {life_paycheck = life_paycheck + 299900;}; // Rank 8
+	             case 9: {life_paycheck = life_paycheck + 299900;}; // Rank 9
 	            };
 ////////////////////////////////////////
 player setVariable["coplevel",(__GETC__(life_coplevel)),true];

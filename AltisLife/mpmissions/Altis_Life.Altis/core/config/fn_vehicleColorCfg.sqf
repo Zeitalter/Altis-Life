@@ -16,16 +16,9 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa", "civ"], 
-			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa", "civ"],
-			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE02_CO.paa", "civ"],
-			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa","civ"],
-			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"],
-			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
 			["textures\fahrzeug\zivilisten\offroad\badmobil.paa","civ"],
 			["textures\fahrzeug\zivilisten\offroad\rocklila.paa","civ"],
 			["textures\fahrzeug\zivilisten\offroad\stickbeige.paa","civ"],
-			["textures\fahrzeug\donator\offroad\unicorn.paa","donator"],
 			["textures\fahrzeug\notarzt\offroad.paa","med"],
 			["textures\fahrzeug\polizei\offroad.paa","cop"]
 		];
@@ -43,16 +36,7 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base01_co.paa","civ"],
-			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base02_co.paa","civ"],
-			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base03_co.paa","civ"],
-			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base04_co.paa","civ"],
-			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base06_co.paa","civ"],
-			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base07_co.paa","civ"],
-			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base08_co.paa","civ"],
-			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa","civ"],
 			["textures\fahrzeug\zivilisten\hatchback\badmobil.paa","civ"],
-			["textures\fahrzeug\donator\hatchback\unicorn.paa","donator"],
 			["textures\fahrzeug\polizei\hatchback.paa","cop"]
 		];
 	};
@@ -62,15 +46,9 @@ switch (_vehicle) do
 		_path = "\a3\soft_f_gamma\Hatchback_01\data\";
 		_ret =
 		[
-			[_path + "hatchback_01_ext_sport01_co.paa","civ"],
-			[_path + "hatchback_01_ext_sport02_co.paa","civ"],
-			[_path + "hatchback_01_ext_sport03_co.paa","civ"],
-			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
-			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
 			["textures\fahrzeug\zivilisten\hatchback_s\redgull.paa","civ"],
 			["textures\fahrzeug\zivilisten\hatchback_s\dragon.paa","civ"],
-			["textures\fahrzeug\donator\hatchback\unicorn.paa","donator"],
 			["textures\fahrzeug\polizei\hatchback.paa","cop"],
 			["textures\fahrzeug\zivilisten\hatchback_s\grenzgaenger.paa","civ"]
 		];
@@ -81,10 +59,6 @@ switch (_vehicle) do
 		_ret =
 		[
 			["textures\fahrzeug\adac\suv_adac3.paa","cop"],
-			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa","civ"],
-			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","civ"],
-			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
-			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
 			["textures\fahrzeug\zivilisten\suv\fire_suv.paa","civ"],
 			["textures\fahrzeug\zivilisten\suv\monster.paa","civ"],
 			["textures\fahrzeug\zivilisten\suv\tribal.paa","civ"],
@@ -171,6 +145,14 @@ switch (_vehicle) do
 		];
 	};
 	
+	case "B_MRAP_01_hmg_F":    
+	{
+		_ret = 
+		[
+			["textures\fahrzeug\polizei\hunter_front.paa","cop","textures\fahrzeug\polizei\hunter_hinten.paa"]
+		];
+	};
+	
 	case "O_MRAP_02_F":      
 	{
 		_ret = 
@@ -196,7 +178,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\fahrzeug\polizei\ifrit_front.paa","cop","textures\fahrzeug\polizei\ifrit_hinten.paa"]
+			["textures\fahrzeug\polizei\ifrit_front.paa","cop","textures\fahrzeug\polizei\ifrit_hinten.paa"],
+			["textures\fahrzeug\rebellen\ifrit\mbt_02_ext01_co.paa","civ","textures\fahrzeug\rebellen\ifrit\mbt_02_ext02_co.paa"]
 		];
 	};
 		
@@ -269,7 +252,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","donate"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","civ"],
 			["textures\fahrzeug\notarzt\hummingbird.paa","med"],
 			["textures\fahrzeug\polizei\hummingbird.paa","cop"],
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","sek"]
